@@ -1,0 +1,153 @@
+We will start with the planning the webApp which is a food delivery app 
+
+Header : 
+       > Logo
+       > Nav-Bar 
+                >Home
+                >Contact Us
+                >Sign In
+                >Cart
+
+Body:
+      >Search 
+      >Cardholder 
+                 > multiple resto-cards 
+                                      > each card (image, rating, cusines, etc.)
+
+Footer: 
+       >social media links
+       > address
+       > copywright and all 
+
+#how to write inline CSS in JSX 
+1. create one style object with a name say 
+const styleCard = {
+    background-color: "yellow",
+}
+
+ <div className="card" style={styleCard}>   // as we have to use {} to put any JS inside JSX 
+            <h3>Meghana Foods</h3>
+          </div>
+
+>>> This means you are coding CSS as well in JSX 
+
+==========================================================================================================
+
+# Props: Properties ( Props are just normal argument to the function when we say we are passing props to
+a component is like passing argument to the function)
+
+we can update the same component dynamically for different values 
+
+(functional component) User = (props)=>{
+       return (
+       {props.name }
+       {props.age }    // you will have to use {} as this is a JS object and you want its elements value
+       )
+}
+if you try to print props >> this is a JS object with key value pair as passed 
+
+<User name="Tushar" age="23"/>
+
+/* <RestoCard resname="Meghana Foods" resdishes="Biryani, North-Indian" resrating="4.4" reseta="40 min"/>
+           <RestoCard resname="KFC" resdishes = "Chicken Wings, Burger"/> */
+
+
+IMPORTANT : you always have to give key while passing props alwasy use the keyword key and then pass one
+unique key 
+
+Reason: if you do not give the id and lets say you are trying add another res card in the home page and 
+now react does not know which card is the new one and it will start rendering every card from the start 
+however if you give unique id to the new card then React will only render the new card bcz it identifies
+the other cards already with their unique id 
+
+You can also use index of map function as well however it is not recommended 
+
+{restList.map((res,index) => {
+          return <RestoCard key={index} resdata={res} />;
+        })}
+
+NOTE: if you do not have unique id then atleast use index of map function for unique identification 
+
+=======================================================================================================
+
+#Config Driven UI :
+
+Controlling your UI which is driven by data based on the backened APIs 
+
+======================================================================================================
+
+What is optional chaining in JS ?
+Answer: How it works:
+
+When you use the optional chaining operator (?.) on an object, it first checks if the object itself is 
+null or undefined.
+If the object is null or undefined, the expression short-circuits and immediately returns undefined.
+If the object is not null or undefined, it proceeds to access the property or call the method as usual.
+Benefits:
+
+Error handling: Prevents errors that would typically occur if you tried to access a property of a null or
+ undefined object using the dot notation (e.g., obj.prop).
+ 
+Conciseness: Makes your code more concise and readable, especially when dealing with nested objects that 
+might have optional properties
+
+Improved maintainability: Reduces the need for explicit null checks and enhances the readability and 
+maintainability of your code.
+
+====================================================================================================================
+
+There are two types of export :
+
+1. default > where you write export default file name to export it 
+export default fileName 
+import filename from "path"
+
+2. name export > where you write the keyword export in front of the variable as you cannot use export default statement 
+more than one time 
+
+export const variable = ...
+import {variable} from "path"
+
+NOTE: you have to use {} only when you are using name export in case of default export you do not have to use {}
+
+==============================================================================================
+
+React Hook :> (Normal JS utility function)
+----------
+
+There are two Hooks which we have to deal with 
+
+1. useState()  > superpowerful state variable in React 
+2. useEffect() >
+
+How to create a useState variable 
+const [variable, setvariable] = useState([])  > inside this array you give default values for your variable 
+
+> to modify this state variable you take another function start with set and then as a common practice you can write 
+it as setvariable whatever variable name is 
+
+you can call this setvariable(pass the modification) > modifies the state variable 
+
+NOTE: WHENEVER THE STATE VARIABLE UPDATES REACT WOULD RERENDER THE COMPONENTS 
+
+===============================================================================================================
+
+Episode : 6 
+
+Monolith approach > All the services would be working under the same project eg: UI, databases, backened, API 
+
+Microservices approach > All the services would work independentaly and does  not interfere with the other services 
+and then eventually all services together makes up the project 
+       - these diff services talk to each other using using different URLs at which these services run 
+       - all these services run diff ports 
+
+Fetching data :: There are two ways to do it 
+
+1. As soon the page loads call the API and once the data is reieved renders the page 
+
+2. As soon as the page loads start rendering and call the API once the data is recieved re-render the page 
+
+useEffect()>  syntax > useEffect(()=>{},[])  == useEffect(callback function, array)
+
+Important point : anything which is inside the useEffect callback function would be executed only once all the content
+inside the body is rendered then in the last it is called 
