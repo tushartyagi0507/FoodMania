@@ -64808,7 +64808,7 @@ const Body = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-wrap gap-10 w-9/12 mx-auto ",
+                className: "flex flex-wrap gap-6 w-9/12 mx-auto ",
                 children: filteredRestaurants.map((res)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/restaurant/" + res?.info?.id,
@@ -65002,135 +65002,146 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const ShimmerContainer = ()=>{
+    const shimCard = "w-[250px] h-[270px] bg-gray-200 rounded-lg px-2";
+    const shimmerButtons = "rounded-lg px-2 ml-2 bg-gray-100 h-8 w-24";
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "shimmer",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-top",
+                className: "flex justify-between",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "filters",
+                        className: "my-6 px-24 flex",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "shimmer-buttons"
+                                className: shimmerButtons
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                                lineNumber: 7,
+                                lineNumber: 9,
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "shimmer-buttons"
+                                className: shimmerButtons
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                                lineNumber: 8,
+                                lineNumber: 10,
                                 columnNumber: 5
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 6,
+                        lineNumber: 8,
                         columnNumber: 5
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "serachNav",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "shimmer-bar"
-                        }, void 0, false, {
-                            fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                            lineNumber: 11,
-                            columnNumber: 8
-                        }, undefined)
-                    }, void 0, false, {
+                        className: "flex my-6 pr-24",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "rounded-lg w-80 h-8 bg-gray-100"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                                lineNumber: 13,
+                                columnNumber: 8
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "w-24 h-8 bg-gray-100 rounded-lg px-2 ml-2"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                                lineNumber: 14,
+                                columnNumber: 8
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 10,
+                        lineNumber: 12,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                lineNumber: 5,
+                lineNumber: 7,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-container",
+                className: "flex flex-wrap gap-4 my-6 mx-auto w-9/12",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "shimCard"
-                    }, void 0, false, {
-                        fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 15,
-                        columnNumber: 8
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "shimCard"
-                    }, void 0, false, {
-                        fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 16,
-                        columnNumber: 8
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "shimCard"
-                    }, void 0, false, {
-                        fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 17,
-                        columnNumber: 8
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "shimCard"
+                        className: shimCard
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
                         lineNumber: 18,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "shimCard"
+                        className: shimCard
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
                         lineNumber: 19,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "shimCard",
-                        children: " "
+                        className: shimCard
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
                         lineNumber: 20,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "shimCard",
-                        children: " "
+                        className: shimCard
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
                         lineNumber: 21,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "shimCard",
-                        children: " "
+                        className: shimCard
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
                         lineNumber: 22,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "shimCard",
+                        className: shimCard,
                         children: " "
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
                         lineNumber: 23,
                         columnNumber: 8
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: shimCard,
+                        children: " "
+                    }, void 0, false, {
+                        fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                        lineNumber: 24,
+                        columnNumber: 8
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: shimCard,
+                        children: " "
+                    }, void 0, false, {
+                        fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                        lineNumber: 25,
+                        columnNumber: 8
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: shimCard,
+                        children: " "
+                    }, void 0, false, {
+                        fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                        lineNumber: 26,
+                        columnNumber: 8
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                lineNumber: 14,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "FoodApp/src/Components/ShimmerContainer.js",
-        lineNumber: 4,
+        lineNumber: 6,
         columnNumber: 6
     }, undefined);
 };

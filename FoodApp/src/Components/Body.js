@@ -110,7 +110,7 @@ const Body = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-wrap gap-10 w-9/12 mx-auto ">
+      <div className="flex flex-wrap gap-6 w-9/12 mx-auto ">
         {filteredRestaurants.map((res) => {
           return (
             <Link
