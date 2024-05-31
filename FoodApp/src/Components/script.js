@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import Header from "./Header.js"
 import Body from "./Body.js"
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import About from "./About.js";
+import Help from "./Help.js";
 import Contact from "./Contact.js";
 import Error from "./Error.js";
 import RestaurantMenu from "./RestaurantMenu.js";
@@ -11,6 +11,7 @@ import Cart from "./Cart.js";
 import { Provider } from "react-redux";
 import Store from "../utils/Store.js";
 import Footer from "./Footer.js"
+import Login from "./Login.js";
 
 const root = ReactDOM.createRoot(document.querySelector(".root"));
 
@@ -37,8 +38,8 @@ const appRouter = createBrowserRouter([
       },
       
       {
-        path: "/About",
-        element: <About/>, 
+        path: "/Help",
+        element: <Help/>, 
       },
       {
         path: "/Contact",
@@ -52,6 +53,10 @@ const appRouter = createBrowserRouter([
         path: "/Cart",
         element: <Cart/>
       },
+      {
+        path: "/Login",
+        element: <Login/>
+      }
     ],
     errorElement: <Error/>
   },

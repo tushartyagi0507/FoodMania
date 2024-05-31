@@ -4,5 +4,6 @@ export const LOGO_URL = "https://imgs.search.brave.com/xiRlM1WxrYHaIFmwGOInSnyB5
 
 export const MENU_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.96340&lng=77.58550&restaurantId="
 
+export const help = "https://food-bazaar-ten.vercel.app/help.cee86e1b.svg"
 // you cannot use export line twice so you can use other way of exporting that is writing export 
 // keyword in front of the variable which is called name export 

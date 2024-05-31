@@ -2962,8 +2962,8 @@ var _headerJsDefault = parcelHelpers.interopDefault(_headerJs);
 var _bodyJs = require("./Body.js");
 var _bodyJsDefault = parcelHelpers.interopDefault(_bodyJs);
 var _reactRouterDom = require("react-router-dom");
-var _aboutJs = require("./About.js");
-var _aboutJsDefault = parcelHelpers.interopDefault(_aboutJs);
+var _helpJs = require("./Help.js");
+var _helpJsDefault = parcelHelpers.interopDefault(_helpJs);
 var _contactJs = require("./Contact.js");
 var _contactJsDefault = parcelHelpers.interopDefault(_contactJs);
 var _errorJs = require("./Error.js");
@@ -2977,6 +2977,8 @@ var _storeJs = require("../utils/Store.js");
 var _storeJsDefault = parcelHelpers.interopDefault(_storeJs);
 var _footerJs = require("./Footer.js");
 var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
+var _loginJs = require("./Login.js");
+var _loginJsDefault = parcelHelpers.interopDefault(_loginJs);
 const root = (0, _clientDefault.default).createRoot(document.querySelector(".root"));
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
@@ -2986,28 +2988,28 @@ const App = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 21,
+                    lineNumber: 22,
                     columnNumber: 7
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 22,
+                    lineNumber: 23,
                     columnNumber: 7
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 7
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "FoodApp/src/Components/script.js",
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 6
         }, undefined)
     }, void 0, false, {
         fileName: "FoodApp/src/Components/script.js",
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 2
     }, undefined);
 };
@@ -3017,7 +3019,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
             fileName: "FoodApp/src/Components/script.js",
-            lineNumber: 32,
+            lineNumber: 33,
             columnNumber: 14
         }, undefined),
         children: [
@@ -3025,15 +3027,15 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 36,
+                    lineNumber: 37,
                     columnNumber: 18
                 }, undefined)
             },
             {
-                path: "/About",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJsDefault.default), {}, void 0, false, {
+                path: "/Help",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _helpJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 41,
+                    lineNumber: 42,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3041,7 +3043,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/Contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 45,
+                    lineNumber: 46,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3049,7 +3051,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurant/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 49,
+                    lineNumber: 50,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3057,14 +3059,22 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/Cart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 53,
+                    lineNumber: 54,
+                    columnNumber: 18
+                }, undefined)
+            },
+            {
+                path: "/Login",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginJsDefault.default), {}, void 0, false, {
+                    fileName: "FoodApp/src/Components/script.js",
+                    lineNumber: 58,
                     columnNumber: 18
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsDefault.default), {}, void 0, false, {
             fileName: "FoodApp/src/Components/script.js",
-            lineNumber: 56,
+            lineNumber: 61,
             columnNumber: 19
         }, undefined)
     }
@@ -3073,7 +3083,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "FoodApp/src/Components/script.js",
-    lineNumber: 61,
+    lineNumber: 66,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3084,7 +3094,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./Header.js":"aDJ4g","./Body.js":"3f7ws","react-router-dom":"9xmpe","./About.js":"i1NPI","./Contact.js":"eiRNd","./Error.js":"5iNAO","./RestaurantMenu.js":"UPLNu","./Cart.js":"b2qck","react-redux":"62sf7","../utils/Store.js":"gvhuQ","./Footer.js":"hZ9IK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./Header.js":"aDJ4g","./Body.js":"3f7ws","react-router-dom":"9xmpe","./Contact.js":"eiRNd","./Error.js":"5iNAO","./RestaurantMenu.js":"UPLNu","./Cart.js":"b2qck","react-redux":"62sf7","../utils/Store.js":"gvhuQ","./Footer.js":"hZ9IK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Help.js":"dkKLB","./Login.js":"XRfad"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27297,6 +27307,12 @@ const Header = ()=>{
     const onlineStatus = (0, _useonlineStatusDefault.default)();
     const [loginBtn, setloginBtn] = (0, _react.useState)("LogIn");
     // using the selector login here, sunbscribing to the Redux store 
+    const handleLogin = ()=>{
+        ()=>{
+            if (loginBtn === "LogIn") setloginBtn("Logout");
+            else setloginBtn("LogIn");
+        };
+    };
     const handlerLoad = ()=>{
         window.location.reload();
     };
@@ -27308,26 +27324,26 @@ const Header = ()=>{
                 className: "name_logo flex justify-center items-center",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "w-20 m-4",
+                        className: "w-20 m-4 ml-32",
                         src: (0, _const.LOGO_URL)
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/Header.js",
-                        lineNumber: 25,
+                        lineNumber: 32,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        className: "font-bold text-2xl text-red-600 font-serif cursor-pointer",
+                        className: "font-bold text-3xl text-red-600 font-serif cursor-pointer",
                         onClick: handlerLoad,
                         children: "FoodMania"
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/Header.js",
-                        lineNumber: 29,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "FoodApp/src/Components/Header.js",
-                lineNumber: 24,
+                lineNumber: 31,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27338,59 +27354,44 @@ const Header = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/",
-                                className: "mx-4",
+                                className: "mx-4 text-[#485563]",
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/Header.js",
-                                lineNumber: 33,
+                                lineNumber: 40,
                                 columnNumber: 17
                             }, undefined)
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/Header.js",
-                            lineNumber: 33,
+                            lineNumber: 40,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/Contact",
-                                className: "mx-4",
-                                children: "Contact Us"
+                                to: "/Help",
+                                className: "mx-4 text-[#485563]",
+                                children: "Help"
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/Header.js",
-                                lineNumber: 34,
+                                lineNumber: 42,
                                 columnNumber: 17
                             }, undefined)
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/Header.js",
-                            lineNumber: 34,
-                            columnNumber: 13
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/About",
-                                className: "mx-4",
-                                children: "About Us"
-                            }, void 0, false, {
-                                fileName: "FoodApp/src/Components/Header.js",
-                                lineNumber: 35,
-                                columnNumber: 17
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "FoodApp/src/Components/Header.js",
-                            lineNumber: 35,
+                            lineNumber: 42,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/Cart",
-                                className: "mx-4",
+                                className: "mx-4 text-[#485563]",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
                                         icon: (0, _freeSolidSvgIcons.faCartShopping)
                                     }, void 0, false, {
                                         fileName: "FoodApp/src/Components/Header.js",
-                                        lineNumber: 36,
-                                        columnNumber: 51
+                                        lineNumber: 43,
+                                        columnNumber: 66
                                     }, undefined),
                                     "(",
                                     cartItems.length,
@@ -27398,58 +27399,62 @@ const Header = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "FoodApp/src/Components/Header.js",
-                                lineNumber: 36,
+                                lineNumber: 43,
                                 columnNumber: 17
                             }, undefined)
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/Header.js",
-                            lineNumber: 36,
+                            lineNumber: 43,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "mx-4 text-yellow-500",
-                                onClick: ()=>{
-                                    if (loginBtn === "LogIn") setloginBtn("Logout");
-                                    else setloginBtn("LogIn");
-                                },
-                                children: loginBtn
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/Login",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "mx-4 text-yellow-500",
+                                    onClick: handleLogin,
+                                    children: loginBtn
+                                }, void 0, false, {
+                                    fileName: "FoodApp/src/Components/Header.js",
+                                    lineNumber: 46,
+                                    columnNumber: 35
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/Header.js",
-                                lineNumber: 39,
+                                lineNumber: 46,
                                 columnNumber: 17
                             }, undefined)
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/Header.js",
-                            lineNumber: 39,
+                            lineNumber: 46,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "mx-4 mr-8",
+                            className: "mx-4 mr-8 text-[#485563]",
                             children: [
                                 "Active: ",
                                 onlineStatus ? "\u2714" : "\u274C"
                             ]
                         }, void 0, true, {
                             fileName: "FoodApp/src/Components/Header.js",
-                            lineNumber: 43,
+                            lineNumber: 47,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "FoodApp/src/Components/Header.js",
-                    lineNumber: 32,
+                    lineNumber: 39,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "FoodApp/src/Components/Header.js",
-                lineNumber: 31,
+                lineNumber: 38,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "FoodApp/src/Components/Header.js",
-        lineNumber: 23,
+        lineNumber: 30,
         columnNumber: 7
     }, undefined);
 };
@@ -27474,9 +27479,11 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
 parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
 parcelHelpers.export(exports, "MENU_URL", ()=>MENU_URL);
+parcelHelpers.export(exports, "help", ()=>help);
 const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/";
 const LOGO_URL = "https://imgs.search.brave.com/xiRlM1WxrYHaIFmwGOInSnyB5Uu3Q9p4blmZZ3LWDmc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/LmNvbS9pbWFnZS1j/ZG4vaW1hZ2VzL2t0/czkyOHBkL3Byb2R1/Y3Rpb24vYjM3NGEx/MjRmYzUwNWFiMzI1/NWZhZGFlMjU3ZDkw/ZThlNGE0ODU1ZS00/NDl4NDMyLnBuZz93/PTEwODAmcT03Mg";
-const MENU_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.96340&lng=77.58550&restaurantId=" // you cannot use export line twice so you can use other way of exporting that is writing export 
+const MENU_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.96340&lng=77.58550&restaurantId=";
+const help = "https://food-bazaar-ten.vercel.app/help.cee86e1b.svg" // you cannot use export line twice so you can use other way of exporting that is writing export 
  // keyword in front of the variable which is called name export 
 ;
 
@@ -64818,13 +64825,13 @@ const Body = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex overflow-x-scroll no-scrollbar [&::-webkit-scrollbar]:hidden mx-auto w-9/12",
+                className: "flex overflow-x-scroll no-scrollbar [&::-webkit-scrollbar]:hidden mx-auto w-9/12 border-b-4 border-gray-100",
                 children: topCarousal.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _topCarousalJsDefault.default), {
                         image: item.imageId,
                         title: item?.action?.text
                     }, item?.action?.text, false, {
                         fileName: "FoodApp/src/Components/Body.js",
-                        lineNumber: 117,
+                        lineNumber: 118,
                         columnNumber: 34
                     }, undefined))
             }, void 0, false, {
@@ -64837,7 +64844,7 @@ const Body = ()=>{
                 children: "Top Resaturants in Bangalore"
             }, void 0, false, {
                 fileName: "FoodApp/src/Components/Body.js",
-                lineNumber: 121,
+                lineNumber: 122,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -64850,25 +64857,25 @@ const Body = ()=>{
                             resdata: res
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/Body.js",
-                            lineNumber: 133,
+                            lineNumber: 134,
                             columnNumber: 17
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restoCardJsDefault.default), {
                             resdata: res
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/Body.js",
-                            lineNumber: 135,
+                            lineNumber: 136,
                             columnNumber: 17
                         }, undefined)
                     }, res?.info?.id, false, {
                         fileName: "FoodApp/src/Components/Body.js",
-                        lineNumber: 127,
+                        lineNumber: 128,
                         columnNumber: 13
                     }, undefined);
                 // return <RestoCard key={res?.info?.id} resdata={res} />
                 })
             }, void 0, false, {
                 fileName: "FoodApp/src/Components/Body.js",
-                lineNumber: 122,
+                lineNumber: 123,
                 columnNumber: 7
             }, undefined)
         ]
@@ -64923,7 +64930,7 @@ const RestoCard = (props)=>{
                 className: "",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        className: " font-bold font-sans tuncate w-[250px]",
+                        className: " font-bold font-sans tuncate w-[250px] my-2",
                         children: name
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/RestoCard.js",
@@ -64938,7 +64945,7 @@ const RestoCard = (props)=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "font-bold font-sans ml-2",
+                        className: "font-bold  ml-2",
                         children: avgRating
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/RestoCard.js",
@@ -64951,14 +64958,14 @@ const RestoCard = (props)=>{
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/RestoCard.js",
                         lineNumber: 23,
-                        columnNumber: 71
+                        columnNumber: 62
                     }, undefined),
                     " ",
                     "\u25AA",
                     " ",
                     " ",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "font-bold font-sans",
+                        className: "font-bold ",
                         children: [
                             resdata.info.sla.deliveryTime,
                             " minutes"
@@ -65096,41 +65103,108 @@ const ShimmerContainer = ()=>{
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "ml-44 my-6",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "h-12 w-60 bg-gray-100 my-6"
+                    }, void 0, false, {
+                        fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                        lineNumber: 18,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex gap-12",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-32 h-32 rounded-full bg-gray-200 "
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                                lineNumber: 20,
+                                columnNumber: 7
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-32 h-32 rounded-full bg-gray-200 "
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                                lineNumber: 21,
+                                columnNumber: 7
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-32 h-32 rounded-full bg-gray-200 "
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                                lineNumber: 22,
+                                columnNumber: 7
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-32 h-32 rounded-full bg-gray-200 "
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                                lineNumber: 23,
+                                columnNumber: 7
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-32 h-32 rounded-full bg-gray-200 "
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                                lineNumber: 24,
+                                columnNumber: 7
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-32 h-32 rounded-full bg-gray-200 "
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                                lineNumber: 25,
+                                columnNumber: 7
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                        lineNumber: 19,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                lineNumber: 17,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex flex-wrap gap-4 my-6 mx-auto w-9/12",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: shimCard
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 18,
+                        lineNumber: 29,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: shimCard
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 19,
+                        lineNumber: 30,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: shimCard
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 20,
+                        lineNumber: 31,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: shimCard
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 21,
+                        lineNumber: 32,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: shimCard
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 22,
+                        lineNumber: 33,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -65138,7 +65212,7 @@ const ShimmerContainer = ()=>{
                         children: " "
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 23,
+                        lineNumber: 34,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -65146,7 +65220,7 @@ const ShimmerContainer = ()=>{
                         children: " "
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 24,
+                        lineNumber: 35,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -65154,7 +65228,7 @@ const ShimmerContainer = ()=>{
                         children: " "
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 25,
+                        lineNumber: 36,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -65162,13 +65236,13 @@ const ShimmerContainer = ()=>{
                         children: " "
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 26,
+                        lineNumber: 37,
                         columnNumber: 8
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                lineNumber: 17,
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined)
         ]
@@ -65238,43 +65312,7 @@ $RefreshReg$(_c, "TopCarousal");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/const":"fRCML"}],"i1NPI":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$114e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$114e.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "h-screen",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "This is About page"
-        }, void 0, false, {
-            fileName: "FoodApp/src/Components/About.js",
-            lineNumber: 4,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
-        fileName: "FoodApp/src/Components/About.js",
-        lineNumber: 3,
-        columnNumber: 8
-    }, undefined);
-};
-_c = About;
-exports.default = About;
-var _c;
-$RefreshReg$(_c, "About");
-
-  $parcel$ReactRefreshHelpers$114e.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eiRNd":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/const":"fRCML"}],"eiRNd":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$f982 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -66017,206 +66055,224 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _const = require("../utils/const");
 const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "w-12/12 bottom-0",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "bg-black flex justify-evenly text-white py-6 mt-4 ",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-                        fileName: "FoodApp/src/Components/Footer.js",
-                        lineNumber: 5,
-                        columnNumber: 5
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "font-bold text-lg pb-2",
-                                    children: "Compnay"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 8,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "About"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 9,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "Careers"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 10,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "Team"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 11,
-                                    columnNumber: 9
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
+        className: "w-12/12",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "bg-black flex justify-evenly text-white py-6 mt-4 ",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _const.LOGO_URL),
+                            className: "w-32 my-2",
+                            alt: "logo"
+                        }, void 0, false, {
                             fileName: "FoodApp/src/Components/Footer.js",
-                            lineNumber: 7,
-                            columnNumber: 10
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "FoodApp/src/Components/Footer.js",
-                        lineNumber: 7,
-                        columnNumber: 5
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "font-bold text-lg pb-2",
-                                    children: "Contact Us"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 16,
-                                    columnNumber: 5
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "Help and Support"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 17,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "Partner with us"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 18,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "Ride with us"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 19,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "Privacy Policies"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 20,
-                                    columnNumber: 9
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
+                            lineNumber: 8,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "my-2",
+                            children: "All right reserved \xa9 2024"
+                        }, void 0, false, {
                             fileName: "FoodApp/src/Components/Footer.js",
-                            lineNumber: 15,
-                            columnNumber: 5
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "FoodApp/src/Components/Footer.js",
-                        lineNumber: 14,
-                        columnNumber: 5
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "font-bold text-lg pb-2",
-                                    children: "We deliver to:"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 25,
-                                    columnNumber: 5
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "Bangalore"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 26,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "Pune"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 27,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "Noida"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 28,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "Gurgaon"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 29,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "Delhi"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 30,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: "cursor-pointer",
-                                    children: "Hyderabad"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/Footer.js",
-                                    lineNumber: 31,
-                                    columnNumber: 9
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
+                            lineNumber: 9,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "Created by Tushar Tyagi with \u2665\uFE0F"
+                        }, void 0, false, {
                             fileName: "FoodApp/src/Components/Footer.js",
-                            lineNumber: 24,
-                            columnNumber: 5
+                            lineNumber: 10,
+                            columnNumber: 9
                         }, undefined)
-                    }, void 0, false, {
+                    ]
+                }, void 0, true, {
+                    fileName: "FoodApp/src/Components/Footer.js",
+                    lineNumber: 7,
+                    columnNumber: 5
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "font-bold text-lg pb-2",
+                                children: "Compnay"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 14,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "About"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 15,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "Careers"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 16,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "Team"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 17,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "FoodApp/src/Components/Footer.js",
-                        lineNumber: 23,
+                        lineNumber: 13,
+                        columnNumber: 10
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "FoodApp/src/Components/Footer.js",
+                    lineNumber: 13,
+                    columnNumber: 5
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "font-bold text-lg pb-2",
+                                children: "Contact Us"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 22,
+                                columnNumber: 5
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "Help and Support"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 23,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "Partner with us"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 24,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "Ride with us"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 25,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "Privacy Policies"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 26,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "FoodApp/src/Components/Footer.js",
+                        lineNumber: 21,
                         columnNumber: 5
                     }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "FoodApp/src/Components/Footer.js",
-                lineNumber: 4,
-                columnNumber: 4
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "bg-[rgba(2,6,12,.75)] text-center py-4 font-black",
-                children: "\xa9 2024 All Rights Reserved. Made by Tushar Tyagi with \uD83E\uDD0E"
-            }, void 0, false, {
-                fileName: "FoodApp/src/Components/Footer.js",
-                lineNumber: 36,
-                columnNumber: 4
-            }, undefined)
-        ]
-    }, void 0, true, {
+                }, void 0, false, {
+                    fileName: "FoodApp/src/Components/Footer.js",
+                    lineNumber: 20,
+                    columnNumber: 5
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "font-bold text-lg pb-2",
+                                children: "We deliver to:"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 31,
+                                columnNumber: 5
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "Bangalore"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 32,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "Pune"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 33,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "Noida"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 34,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "Gurgaon"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 35,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "Delhi"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 36,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "cursor-pointer",
+                                children: "Hyderabad"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Footer.js",
+                                lineNumber: 37,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "FoodApp/src/Components/Footer.js",
+                        lineNumber: 30,
+                        columnNumber: 5
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "FoodApp/src/Components/Footer.js",
+                    lineNumber: 29,
+                    columnNumber: 5
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "FoodApp/src/Components/Footer.js",
+            lineNumber: 6,
+            columnNumber: 4
+        }, undefined)
+    }, void 0, false, {
         fileName: "FoodApp/src/Components/Footer.js",
-        lineNumber: 3,
+        lineNumber: 5,
         columnNumber: 12
     }, undefined);
 };
@@ -66230,6 +66286,200 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["lnAzI","1xC6H","jQiRT"], "jQiRT", "parcelRequire70d3")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/const":"fRCML"}],"dkKLB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1d4d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1d4d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _const = require("../utils/const");
+const Help = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "my-4 flex justify-start items-center gap-2 flex-col ",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: " lg:text-5xl md:text-3xl text-2xl py-4 md:py-3 lg:py-4 text-orange-500 font-bold",
+                    children: "Help & Support"
+                }, void 0, false, {
+                    fileName: "FoodApp/src/Components/Help.js",
+                    lineNumber: 6,
+                    columnNumber: 14
+                }, undefined)
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/Help.js",
+                lineNumber: 6,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex w-12/12 md:px-16 px-4 lg:px-20 justify-center md:gap-6 gap-4 lg:gap-8 items-center flex-col lg:flex-row",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-5/12",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "lg:w-full md:w-full w-full",
+                            src: (0, _const.help)
+                        }, void 0, false, {
+                            fileName: "FoodApp/src/Components/Help.js",
+                            lineNumber: 9,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "FoodApp/src/Components/Help.js",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex justify-start items-start lg:py-8 md:py-6 py-4 lg:w-8/12 w-12/12 gap-4 flex-col",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex lg:py-4 md:py-3 py-2 lg:px-8 md:px-6 px-3 justify-start items-start flex-col bg-white shadow-lg",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "lg:text-base md:text-base text-sm text-gray-900 font-semibold lg:tracking-normal tracking-wide",
+                                        children: "What is Food Bazaar Customer Care Number?"
+                                    }, void 0, false, {
+                                        fileName: "FoodApp/src/Components/Help.js",
+                                        lineNumber: 13,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "lg:pt-3 md:pt-2 pt-1 md:text-sm text-xs lg:text-sm text-gray-400 font-normal lg:tracking-wide tracking-wider",
+                                        children: "We've upgraded our customer support to a chat-based system for swift issue resolution. No more navigating through IVRS complexities. Just search for your issue in the help section, start a chat, and a care executive will assist you shortly."
+                                    }, void 0, false, {
+                                        fileName: "FoodApp/src/Components/Help.js",
+                                        lineNumber: 14,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "FoodApp/src/Components/Help.js",
+                                lineNumber: 12,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex lg:py-4 md:py-3 py-2 lg:px-8 md:px-6 px-3 justify-start items-start flex-col bg-white shadow-lg",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "lg:text-base md:text-base text-sm text-gray-900 font-semibold lg:tracking-normal tracking-wide",
+                                        children: "I did not receive my OTP on SMS"
+                                    }, void 0, false, {
+                                        fileName: "FoodApp/src/Components/Help.js",
+                                        lineNumber: 17,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "lg:pt-3 md:pt-2 pt-1 md:text-sm text-xs lg:text-sm text-gray-400 font-normal lg:tracking-wide tracking-wider",
+                                        children: "If you're not receiving the OTP, it's usually due to a network issue. Please check your mobile network settings and try generating a new OTP. If the problem persists, you might want to restart your device or reach out to us at support@foodbazaar.in for assistance."
+                                    }, void 0, false, {
+                                        fileName: "FoodApp/src/Components/Help.js",
+                                        lineNumber: 18,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "FoodApp/src/Components/Help.js",
+                                lineNumber: 16,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex lg:py-4 md:py-3 py-2 lg:px-8 md:px-6 px-3 justify-start items-start flex-col bg-white shadow-lg",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "lg:text-base md:text-base text-sm text-gray-900 font-semibold lg:tracking-normal tracking-wide",
+                                        children: "I am unable to find the restaurant I'm looking for?"
+                                    }, void 0, false, {
+                                        fileName: "FoodApp/src/Components/Help.js",
+                                        lineNumber: 23,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "lg:pt-3 md:pt-2 pt-1 md:text-sm text-xs lg:text-sm text-gray-400 font-normal lg:tracking-wide tracking-wider",
+                                        children: "The restaurant might either be closed at the moment or temporarily not serviceable due to low rider availability near the restaurant. Please try again after some time or consider ordering from a different eatery."
+                                    }, void 0, false, {
+                                        fileName: "FoodApp/src/Components/Help.js",
+                                        lineNumber: 24,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "FoodApp/src/Components/Help.js",
+                                lineNumber: 22,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "FoodApp/src/Components/Help.js",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "FoodApp/src/Components/Help.js",
+                lineNumber: 7,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "FoodApp/src/Components/Help.js",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Help;
+exports.default = Help;
+var _c;
+$RefreshReg$(_c, "Help");
+
+  $parcel$ReactRefreshHelpers$1d4d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/const":"fRCML"}],"XRfad":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$48a9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$48a9.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Login = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "my-12 h-5/6 w-full",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            src: "https://img.freepik.com/free-vector/red-grunge-style-coming-soon-design_1017-26691.jpg",
+            className: "w-96 mx-auto mt-[12%]",
+            alt: "coming soon"
+        }, void 0, false, {
+            fileName: "FoodApp/src/Components/Login.js",
+            lineNumber: 6,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false, {
+        fileName: "FoodApp/src/Components/Login.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Login;
+exports.default = Login;
+var _c;
+$RefreshReg$(_c, "Login");
+
+  $parcel$ReactRefreshHelpers$48a9.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["lnAzI","1xC6H","jQiRT"], "jQiRT", "parcelRequire70d3")
 
 //# sourceMappingURL=index.f4ff381c.js.map

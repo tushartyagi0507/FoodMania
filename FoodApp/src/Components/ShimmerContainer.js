@@ -14,6 +14,17 @@ return (
        <button className="w-24 h-8 bg-gray-100 rounded-lg px-2 ml-2"></button>
       </div> 
     </div>
+    <div className="ml-44 my-6">
+      <div className="h-12 w-60 bg-gray-100 my-6"></div>
+      <div className="flex gap-12">
+      <div className="w-32 h-32 rounded-full bg-gray-200 "></div>
+      <div className="w-32 h-32 rounded-full bg-gray-200 "></div>
+      <div className="w-32 h-32 rounded-full bg-gray-200 "></div>
+      <div className="w-32 h-32 rounded-full bg-gray-200 "></div>
+      <div className="w-32 h-32 rounded-full bg-gray-200 "></div>
+      <div className="w-32 h-32 rounded-full bg-gray-200 "></div>
+      </div>
+    </div>
       <div className="flex flex-wrap gap-4 my-6 mx-auto w-9/12">
        <div className={shimCard}></div> 
        <div className={shimCard}></div>

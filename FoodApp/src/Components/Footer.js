@@ -1,8 +1,14 @@
+import { LOGO_URL } from "../utils/const"
+
 const Footer = ()=>{
 
-    return <div className="w-12/12 bottom-0">
+    return <div className="w-12/12">
    <div className="bg-black flex justify-evenly text-white py-6 mt-4 ">
-    <div></div>
+    <div>
+        <img src={LOGO_URL} className="w-32 my-2" alt="logo" />
+        <span className="my-2">All right reserved © 2024</span>
+        <p>Created by Tushar Tyagi with ♥️</p>
+    </div>
 
     <div><ul>
         <li className="font-bold text-lg pb-2">Compnay</li>
@@ -32,9 +38,6 @@ const Footer = ()=>{
         </ul>
     </div>
 
-   </div>
-   <div className="bg-[rgba(2,6,12,.75)] text-center py-4 font-black"> 
-   © 2024 All Rights Reserved. Made by Tushar Tyagi with 🤎
    </div>
     </div>
 }

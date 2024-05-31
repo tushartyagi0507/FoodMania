@@ -113,7 +113,8 @@ const Body = () => {
         </div>
       </div>
       <h1 className="text-3xl font-bold my-6 ml-44">What's on your mind?</h1>
-      <div className="flex overflow-x-scroll no-scrollbar [&::-webkit-scrollbar]:hidden mx-auto w-9/12">
+      <div className="flex overflow-x-scroll no-scrollbar [&::-webkit-scrollbar]:hidden mx-auto w-9/12
+      border-b-4 border-gray-100">
       {topCarousal.map((item) => <TopCarousal image={item.imageId} title={item?.action?.text} key={item?.action?.text}/>)}
        
       </div>

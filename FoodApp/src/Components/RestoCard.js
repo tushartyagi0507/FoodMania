@@ -18,10 +18,10 @@ return (
         />
   
       <div className="">
-        <h3 className=" font-bold font-sans tuncate w-[250px]">{name}</h3>
+        <h3 className=" font-bold font-sans tuncate w-[250px] my-2">{name}</h3>
         <FontAwesomeIcon icon={faStar}/>
-        <span className="font-bold font-sans ml-2">{avgRating}</span> <span>{"("+totalRatingsString+")"}</span> {"▪"} {" "}
-        <span className="font-bold font-sans">{resdata.info.sla.deliveryTime} minutes</span>
+        <span className="font-bold  ml-2">{avgRating}</span> <span>{"("+totalRatingsString+")"}</span> {"▪"} {" "}
+        <span className="font-bold ">{resdata.info.sla.deliveryTime} minutes</span>
         <h4 className="truncate">{cuisines.join(", ")}</h4>
       </div>
     </div>
