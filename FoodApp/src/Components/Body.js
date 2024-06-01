@@ -27,7 +27,7 @@ const Body = () => {
         "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.96340&lng=77.58550&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
       );
       const jsonData = await data.json();
-      console.log(jsonData);
+      // console.log(jsonData);
       // console.log(jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
       setlistofRestaurants(
         jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
@@ -38,7 +38,7 @@ const Body = () => {
           ?.restaurants
       );
       settopCarousal(jsonData.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info)
-      console.log(jsonData.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info)
+      // console.log(jsonData.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info)
     } catch {
       console.log("Could not fetch the data from the API");
     }
@@ -120,7 +120,7 @@ const Body = () => {
       </div>
       
       <h1 className="my-6 ml-44 font-bold text-3xl">Top Resaturants in Bangalore</h1>
-      <div className="flex flex-wrap gap-6 w-9/12 mx-auto ">
+      <div className="flex flex-wrap gap-4 w-9/12 mx-auto ">
         
         {filteredRestaurants.map((res) => {
           return (

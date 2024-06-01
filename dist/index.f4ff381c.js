@@ -64651,8 +64651,8 @@ const CartSlice = (0, _toolkit.createSlice)({
             ;
         },
         removeItem: (state, action)=>{
-            state.items.filter((it)=>it.id !== action.payload.id) // so it will filter out the item from the items which you wish to delete 
-            ;
+            state.items = state.items.filter((it)=>it.card.info.id !== action.payload);
+        // so it will filter out the item from the items which you wish to delete 
         },
         clearCart: (state)=>{
             state.items.length = 0;
@@ -64700,12 +64700,12 @@ const Body = ()=>{
         try {
             let data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.96340&lng=77.58550&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
             const jsonData = await data.json();
-            console.log(jsonData);
+            // console.log(jsonData);
             // console.log(jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
             setlistofRestaurants(jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
             setfilteredRestaurants(jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
             settopCarousal(jsonData.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
-            console.log(jsonData.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
+        // console.log(jsonData.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info)
         } catch  {
             console.log("Could not fetch the data from the API");
         }
@@ -64848,7 +64848,7 @@ const Body = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-wrap gap-6 w-9/12 mx-auto ",
+                className: "flex flex-wrap gap-4 w-9/12 mx-auto ",
                 children: filteredRestaurants.map((res)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/restaurant/" + res?.info?.id,
@@ -65766,6 +65766,7 @@ const ItemList = (props)=>{
     const { item } = props;
     const dispatch = (0, _reactRedux.useDispatch)();
     const handlerAdd = (item)=>{
+        // console.log(item)
         dispatch((0, _cartSlice.addItem)(item));
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -65781,7 +65782,7 @@ const ItemList = (props)=>{
                             children: name
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/ItemList.js",
-                            lineNumber: 20,
+                            lineNumber: 21,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -65792,7 +65793,7 @@ const ItemList = (props)=>{
                             ]
                         }, void 0, true, {
                             fileName: "FoodApp/src/Components/ItemList.js",
-                            lineNumber: 21,
+                            lineNumber: 22,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -65800,13 +65801,13 @@ const ItemList = (props)=>{
                             children: description
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/ItemList.js",
-                            lineNumber: 22,
+                            lineNumber: 23,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "FoodApp/src/Components/ItemList.js",
-                    lineNumber: 19,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -65817,7 +65818,7 @@ const ItemList = (props)=>{
                             children: "Add +"
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/ItemList.js",
-                            lineNumber: 25,
+                            lineNumber: 26,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -65825,24 +65826,24 @@ const ItemList = (props)=>{
                             className: "bg-cover w-[156px] h-[144px] p-4 mr-2"
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/ItemList.js",
-                            lineNumber: 32,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "FoodApp/src/Components/ItemList.js",
-                    lineNumber: 24,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "FoodApp/src/Components/ItemList.js",
-            lineNumber: 18,
+            lineNumber: 19,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "FoodApp/src/Components/ItemList.js",
-        lineNumber: 17,
+        lineNumber: 18,
         columnNumber: 5
     }, undefined);
 };
@@ -65875,71 +65876,101 @@ var _reactRedux = require("react-redux");
 var _cartItems = require("./CartItems");
 var _cartItemsDefault = parcelHelpers.interopDefault(_cartItems);
 var _cartSlice = require("../utils/Redux Slices/CartSlice");
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const Cart = ()=>{
     _s();
     //here also you have to subscribe to the store as you want to show the added items here
     const List = (0, _reactRedux.useSelector)((store)=>store.cart.items);
+    const Navigate = (0, _reactRouterDom.useNavigate)();
     const dispatch = (0, _reactRedux.useDispatch)();
     const handlerClear = ()=>{
         dispatch((0, _cartSlice.clearCart)());
     };
+    const handlerHome = ()=>{
+        Navigate("/");
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "text-center h-screen",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "font-bold text-2xl my-8",
-                children: "Cart"
-            }, void 0, false, {
-                fileName: "FoodApp/src/Components/Cart.js",
-                lineNumber: 17,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "w-6/12 mx-auto",
-                children: [
-                    List.map((list)=>{
-                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartItemsDefault.default), {
-                            item: list
-                        }, list?.card?.info?.id, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "w-6/12 mx-auto",
+            children: [
+                List.map((list)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartItemsDefault.default), {
+                        item: list
+                    }, list?.card?.info?.id, false, {
+                        fileName: "FoodApp/src/Components/Cart.js",
+                        lineNumber: 24,
+                        columnNumber: 25
+                    }, undefined);
+                }),
+                List.length === 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "mt-6 text-2xl text-bold",
+                            children: "The cart is empty"
+                        }, void 0, false, {
                             fileName: "FoodApp/src/Components/Cart.js",
-                            lineNumber: 20,
-                            columnNumber: 25
-                        }, undefined);
-                    }),
-                    List.length === 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "text-center",
-                        children: "The Cart is empty. Please add items before you check out "
-                    }, void 0, false, {
-                        fileName: "FoodApp/src/Components/Cart.js",
-                        lineNumber: 22,
-                        columnNumber: 38
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "bg-blue-500 text-white text-bold rounded-lg p-2 m-4",
-                        onClick: handlerClear,
-                        children: "Clear Cart"
-                    }, void 0, false, {
-                        fileName: "FoodApp/src/Components/Cart.js",
-                        lineNumber: 23,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "FoodApp/src/Components/Cart.js",
-                lineNumber: 18,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
+                            lineNumber: 28,
+                            columnNumber: 16
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: "https://food-bazaar-ten.vercel.app/cart.ce1fb0f8.svg",
+                                className: "w-60 mx-auto my-6"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Cart.js",
+                                lineNumber: 30,
+                                columnNumber: 21
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "FoodApp/src/Components/Cart.js",
+                            lineNumber: 29,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "text-center",
+                            children: "Please add items before you check out "
+                        }, void 0, false, {
+                            fileName: "FoodApp/src/Components/Cart.js",
+                            lineNumber: 33,
+                            columnNumber: 14
+                        }, undefined)
+                    ]
+                }, void 0, true),
+                List.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "bg-blue-500 text-white text-bold rounded-lg p-2 m-4",
+                    onClick: handlerHome,
+                    children: "See restaurants to order"
+                }, void 0, false, {
+                    fileName: "FoodApp/src/Components/Cart.js",
+                    lineNumber: 37,
+                    columnNumber: 13
+                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "bg-blue-500 text-white text-bold rounded-lg p-2 m-4",
+                    onClick: handlerClear,
+                    children: "Clear Cart"
+                }, void 0, false, {
+                    fileName: "FoodApp/src/Components/Cart.js",
+                    lineNumber: 40,
+                    columnNumber: 13
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "FoodApp/src/Components/Cart.js",
+            lineNumber: 22,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
         fileName: "FoodApp/src/Components/Cart.js",
-        lineNumber: 16,
+        lineNumber: 21,
         columnNumber: 9
     }, undefined);
 };
-_s(Cart, "thaYxBfUZIh58QZioRasK6Tl9Ok=", false, function() {
+_s(Cart, "ZKuVJABGo5HVQkK8hSDnr7EP4RE=", false, function() {
     return [
         (0, _reactRedux.useSelector),
+        (0, _reactRouterDom.useNavigate),
         (0, _reactRedux.useDispatch)
     ];
 });
@@ -65953,7 +65984,7 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./CartItems":"hYX6R","../utils/Redux Slices/CartSlice":"g8H9A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hYX6R":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./CartItems":"hYX6R","../utils/Redux Slices/CartSlice":"g8H9A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"hYX6R":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$848f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -65963,89 +65994,114 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _cartSlice = require("../utils/Redux Slices/CartSlice");
 var _const = require("../utils/const");
-const CartItems = (props)=>{
-    console.log(props);
-    const { name, defaultPrice, price, description, imageId } = props?.item?.card?.info;
-    const { rating, ratingCount } = props?.item?.card?.info?.ratings?.aggregatedRating;
+var _reactRedux = require("react-redux");
+var _s = $RefreshSig$();
+const ItemList = (props)=>{
+    _s();
+    // console.log("props for list items", props);
+    const { name, defaultPrice, description, price, imageId } = props?.item?.card?.info;
+    const { item } = props;
+    const dispatch = (0, _reactRedux.useDispatch)();
+    const handlerRemove = (item)=>{
+        // console.log(item?.card?.info?.id)
+        dispatch((0, _cartSlice.removeItem)(item?.card?.info?.id));
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "mb-6 border-b-2 border-gray-300 pb-4 ",
+        className: "mb-6 border-b-2 border-gray-300 pb-4 text-left my-6",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "flex justify-between",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "flex-col w-9/12",
+                    className: "flex-col w-9/12 pl-2",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "font-bold text-md text-left",
+                            className: "font-bold text-md",
                             children: name
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/CartItems.js",
-                            lineNumber: 11,
-                            columnNumber: 9
+                            lineNumber: 21,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "font-bold text-left",
+                            className: "font-bold",
                             children: [
                                 "\u20B9",
                                 defaultPrice / 100 || price / 100
                             ]
                         }, void 0, true, {
                             fileName: "FoodApp/src/Components/CartItems.js",
-                            lineNumber: 12,
-                            columnNumber: 9
+                            lineNumber: 22,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             className: "tex-color-gray-300 mt-2",
                             children: description
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/CartItems.js",
-                            lineNumber: 13,
-                            columnNumber: 9
+                            lineNumber: 23,
+                            columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "FoodApp/src/Components/CartItems.js",
-                    lineNumber: 10,
-                    columnNumber: 7
+                    lineNumber: 20,
+                    columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _const.CDN_URL) + imageId,
-                        className: "bg-cover w-[156px] h-[144px]  mr-2"
-                    }, void 0, false, {
-                        fileName: "FoodApp/src/Components/CartItems.js",
-                        lineNumber: 15,
-                        columnNumber: 12
-                    }, undefined)
-                }, void 0, false, {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "absolute rounded-lg text-green-600 bg-white px-4 py-1 mt-24 ml-8 font-bold shadow-lg hover:bg-gray-400 hover:text-white",
+                            onClick: ()=>handlerRemove(item),
+                            children: "Remove"
+                        }, void 0, false, {
+                            fileName: "FoodApp/src/Components/CartItems.js",
+                            lineNumber: 26,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _const.CDN_URL) + imageId,
+                            className: "bg-cover w-[156px] h-[144px] p-4 mr-2"
+                        }, void 0, false, {
+                            fileName: "FoodApp/src/Components/CartItems.js",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
                     fileName: "FoodApp/src/Components/CartItems.js",
-                    lineNumber: 15,
-                    columnNumber: 7
+                    lineNumber: 25,
+                    columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "FoodApp/src/Components/CartItems.js",
-            lineNumber: 9,
-            columnNumber: 5
+            lineNumber: 19,
+            columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "FoodApp/src/Components/CartItems.js",
-        lineNumber: 8,
-        columnNumber: 14
+        lineNumber: 18,
+        columnNumber: 5
     }, undefined);
 };
-_c = CartItems;
-exports.default = CartItems;
+_s(ItemList, "rgTLoBID190wEKCp9+G8W6F7A5M=", false, function() {
+    return [
+        (0, _reactRedux.useDispatch)
+    ];
+});
+_c = ItemList;
+exports.default = ItemList;
 var _c;
-$RefreshReg$(_c, "CartItems");
+$RefreshReg$(_c, "ItemList");
 
   $parcel$ReactRefreshHelpers$848f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/const":"fRCML","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hZ9IK":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../utils/const":"fRCML","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/Redux Slices/CartSlice":"g8H9A","react-redux":"62sf7"}],"hZ9IK":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8aef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

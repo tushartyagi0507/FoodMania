@@ -11,6 +11,7 @@ const ItemList = (props) => {
     const dispatch = useDispatch();
 
     const handlerAdd = (item)=>{
+      // console.log(item)
       dispatch(addItem(item))
     }
   return (

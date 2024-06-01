@@ -151,3 +151,45 @@ useEffect()>  syntax > useEffect(()=>{},[])  == useEffect(callback function, arr
 
 Important point : anything which is inside the useEffect callback function would be executed only once all the content
 inside the body is rendered then in the last it is called 
+
+import { CDN_URL } from "../utils/const"
+
+const CartItems = (props)=>{
+    console.log(props)
+    const {name,defaultPrice, price, description,imageId} = props?.item?.card?.info
+    const {rating, ratingCount} = props?.item?.card?.info?.ratings?.aggregatedRating
+
+    return   <div className="mb-6 border-b-2 border-gray-300 pb-4 mt-6">
+    <div className="flex justify-between">
+      <div className="flex-col w-9/12">
+        <div className="font-bold text-md text-left">{name}</div>
+        <div className="font-bold text-left">₹{defaultPrice / 100 || price / 100}</div>
+        <p className="tex-color-gray-300 mt-2 text-left">{description}</p>
+      </div>
+      <div>
+      <button
+            className="absolute rounded-lg text-green-600 bg-white 
+       font-bold shadow-lg hover:bg-gray-400 hover:text-white px-4 py-1 mt-24 mr-6 "
+       onClick={()=>handlerAdd(item)}
+          >
+            Add +
+          </button>
+        <img
+          src={CDN_URL + imageId}
+          className="bg-cover w-[156px] h-[144px]  mr-2"
+        />
+     
+      </div>
+      
+    </div>
+
+    {/* {console.log( CDN_URL+imageId)} */}
+  </div>
+}
+
+export default CartItems;
+
+
+ removeItem: (state,action)=>{
+     state.items.filter( (it)=> it.id !== action.payload.id )// so it will filter out the item from the items which you wish to delete 
+       },

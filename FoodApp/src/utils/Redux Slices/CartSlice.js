@@ -10,8 +10,9 @@ const CartSlice = createSlice({
     state.items.push(action.payload)  // do not use return statement as either you should return a new state let the immer library mute the state for you 
         },
        removeItem: (state,action)=>{
-     state.items.filter( (it)=> it.id !== action.payload.id )// so it will filter out the item from the items which you wish to delete 
-       },
+     state.items = state.items.filter((it) =>  (it.card.info.id !== action.payload) )  
+     // so it will filter out the item from the items which you wish to delete 
+},
        clearCart: (state)=>{
        state.items.length = 0
        }
