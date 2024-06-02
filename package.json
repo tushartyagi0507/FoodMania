@@ -5,8 +5,8 @@
 
   "scripts": {
     "test": "jest",
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel FoodApp/src/index.html",
+    "build": "parcel build FoodApp/src/index.html"
   },
   "repository": {
     "type": "git",
