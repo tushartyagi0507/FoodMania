@@ -3,7 +3,7 @@ import { LOGO_URL } from "../utils/const"
 const Footer = ()=>{
 
     return <div className="w-12/12">
-   <div className="bg-black flex justify-evenly text-white py-6 mt-4 ">
+   <div className="bg-black flex justify-evenly text-white py-6 mt-16 ">
     <div>
         <img src={LOGO_URL} className="w-32 my-2" alt="logo" />
         <span className="my-2">All right reserved © 2024</span>

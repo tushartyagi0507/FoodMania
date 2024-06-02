@@ -51,97 +51,97 @@ const Body = () => {
         </h1>
       </div>
     );
-  return listofRestaurants.length === 0 ? (
-    <ShimmerContainer />
-  ) : (
-    <div className="body">
-      <div className="flex justify-between my-6 px-24 ">
-        <div className="flex gap-4">
-          <button
-            className="text-neutral-400 border-solid border-2 border-slate-300 shadow-md px-2 rounded-md
-            font-bold text-sm h-8"
-            onClick={() => {
-              let filteredList = listofRestaurants.filter((res) => {
-                return res.info.avgRating >= 4.0;
-              });
-              setfilteredRestaurants(filteredList);
-            }}
-          >
-            Ratings 4.0+
-          </button>
-          <button
-            className="text-neutral-400 border-solid border-2 border-slate-300 shadow-md px-2 rounded-md text-sm
-            font-bold h-8"
-            onClick={() => {
-              let vegList = listofRestaurants.filter((res) => {
-                console.log(res?.info.veg);
-                return res?.info?.veg;
-              });
-              setfilteredRestaurants(vegList);
-            }}
-          >
-            Pure Veg
-          </button>
-        </div>
-        <div className="mr-10">
-          <input
-            type="text"
-            className="border-2 border-solid border-rgb(156,156,156) w-80 pl-2 
-            shadow-md h-8 bg-gray-50 rounded-md font-bold"
-            placeholder="Search for restaurant and food"
-            value={searchtext}
-            onChange={(e) => {
-              setsearchtext(e.target.value);
-            }}
-          />
-          <button
-            className="ml-2 border-2 border-solid border-rgb(156,156,156) px-2 
-            shadow-md h-8 bg-gray-50 rounded-md font-bold"
-            onClick={() => {
-              console.log(searchtext);
-              let searchedList = listofRestaurants.filter((res) => {
-                return res?.info.name
-                  .toLowerCase()
-                  .includes(searchtext.toLowerCase());
-              });
-              console.log(searchedList);
-              setfilteredRestaurants(searchedList);
-            }}
-          >
-            Search
-          </button>
-        </div>
-      </div>
-      <h1 className="text-3xl font-bold my-6 ml-44">What's on your mind?</h1>
-      <div className="flex overflow-x-scroll no-scrollbar [&::-webkit-scrollbar]:hidden mx-auto w-9/12
-      border-b-4 border-gray-100">
-      {topCarousal.map((item) => <TopCarousal image={item.imageId} title={item?.action?.text} key={item?.action?.text}/>)}
-       
-      </div>
-      
-      <h1 className="my-6 ml-44 font-bold text-3xl">Top Resaturants in Bangalore</h1>
-      <div className="flex flex-wrap gap-4 w-9/12 mx-auto ">
-        
-        {filteredRestaurants.map((res) => {
-          return (
-        
-            <Link
-              key={res?.info?.id}
-              to={"/restaurant/" + res?.info?.id}
-              className="link"
+  return (
+    listofRestaurants?.length === 0 ? (<ShimmerContainer/>) : (
+      <div className="body">
+        <div className="flex justify-between my-6 px-24 ">
+          <div className="flex gap-4">
+            <button
+              className="text-neutral-400 border-solid border-2 border-slate-300 shadow-md px-2 rounded-md
+              font-bold text-sm h-8"
+              onClick={() => {
+                let filteredList = listofRestaurants.filter((res) => {
+                  return res.info.avgRating >= 4.0;
+                });
+                setfilteredRestaurants(filteredList);
+              }}
             >
-              {res?.info?.veg ? (
-                <VegRestuarant resdata={res} />
-              ) : (
-                <RestoCard resdata={res} />
-              )}
-            </Link>
-          );
-          // return <RestoCard key={res?.info?.id} resdata={res} />
-        })}
+              Ratings 4.0+
+            </button>
+            <button
+              className="text-neutral-400 border-solid border-2 border-slate-300 shadow-md px-2 rounded-md text-sm
+              font-bold h-8"
+              onClick={() => {
+                let vegList = listofRestaurants.filter((res) => {
+                  console.log(res?.info.veg);
+                  return res?.info?.veg;
+                });
+                setfilteredRestaurants(vegList);
+              }}
+            >
+              Pure Veg
+            </button>
+          </div>
+          <div className="mr-10">
+            <input
+              type="text"
+              className="border-2 border-solid border-rgb(156,156,156) w-80 pl-2 
+              shadow-md h-8 bg-gray-50 rounded-md font-bold"
+              placeholder="Search for restaurant and food"
+              value={searchtext}
+              onChange={(e) => {
+                setsearchtext(e.target.value);
+              }}
+            />
+            <button
+              className="ml-2 border-2 border-solid border-rgb(156,156,156) px-2 
+              shadow-md h-8 bg-gray-50 rounded-md font-bold"
+              onClick={() => {
+                console.log(searchtext);
+                let searchedList = listofRestaurants.filter((res) => {
+                  return res?.info.name
+                    .toLowerCase()
+                    .includes(searchtext.toLowerCase());
+                });
+                console.log(searchedList);
+                setfilteredRestaurants(searchedList);
+              }}
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <h1 className="text-3xl font-bold my-6 ml-44">What's on your mind?</h1>
+        <div className="flex overflow-x-scroll no-scrollbar [&::-webkit-scrollbar]:hidden mx-auto w-9/12
+        border-b-4 border-gray-100">
+        {!topCarousal ? null : topCarousal.map((item) => <TopCarousal image={item.imageId} title={item?.action?.text} key={item?.action?.text}/>)}
+         
+        </div>
+        
+        <h1 className="my-6 ml-44 font-bold text-3xl">Top Resaturants in Bangalore</h1>
+        <div className="flex flex-wrap gap-4 w-9/12 mx-auto ">
+          
+          {!filteredRestaurants ? null : filteredRestaurants.map((res) => {
+            return (
+          
+              <Link
+                key={res?.info?.id}
+                to={"/restaurant/" + res?.info?.id}
+                className="link"
+              >
+                {res?.info?.veg ? (
+                  <VegRestuarant resdata={res} />
+                ) : (
+                  <RestoCard resdata={res} />
+                )}
+              </Link>
+            );
+            // return <RestoCard key={res?.info?.id} resdata={res} />
+          })}
+        </div>
       </div>
-    </div>
-  );
+    )
+  )
 };
 
 export default Body;

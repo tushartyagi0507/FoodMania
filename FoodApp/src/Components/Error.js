@@ -4,7 +4,7 @@ import { useRouteError } from "react-router-dom";
 
 const Error = ()=>{
   const err = useRouteError();
-  console.log(err);
+  // console.log(err);
     return (
 <div className="w-12/12 h-screen flex bg-slate-100 ">
 <div className="my-auto w-6/12 mx-auto flex p-2">

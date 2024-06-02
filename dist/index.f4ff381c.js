@@ -3019,7 +3019,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
             fileName: "FoodApp/src/Components/script.js",
-            lineNumber: 33,
+            lineNumber: 34,
             columnNumber: 14
         }, undefined),
         children: [
@@ -3027,7 +3027,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 37,
+                    lineNumber: 38,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3035,7 +3035,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/Help",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _helpJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 42,
+                    lineNumber: 43,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3043,7 +3043,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/Contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 46,
+                    lineNumber: 47,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3051,7 +3051,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurant/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 50,
+                    lineNumber: 51,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3059,7 +3059,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/Cart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 54,
+                    lineNumber: 55,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3067,14 +3067,14 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/Login",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginJsDefault.default), {}, void 0, false, {
                     fileName: "FoodApp/src/Components/script.js",
-                    lineNumber: 58,
+                    lineNumber: 59,
                     columnNumber: 18
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsDefault.default), {}, void 0, false, {
             fileName: "FoodApp/src/Components/script.js",
-            lineNumber: 61,
+            lineNumber: 62,
             columnNumber: 19
         }, undefined)
     }
@@ -3083,7 +3083,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "FoodApp/src/Components/script.js",
-    lineNumber: 66,
+    lineNumber: 67,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3094,7 +3094,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./Header.js":"aDJ4g","./Body.js":"3f7ws","react-router-dom":"9xmpe","./Contact.js":"eiRNd","./Error.js":"5iNAO","./RestaurantMenu.js":"UPLNu","./Cart.js":"b2qck","react-redux":"62sf7","../utils/Store.js":"gvhuQ","./Footer.js":"hZ9IK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Help.js":"dkKLB","./Login.js":"XRfad"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./Header.js":"aDJ4g","./Body.js":"3f7ws","react-router-dom":"9xmpe","./Help.js":"dkKLB","./Contact.js":"eiRNd","./Error.js":"5iNAO","./RestaurantMenu.js":"UPLNu","./Cart.js":"b2qck","react-redux":"62sf7","../utils/Store.js":"gvhuQ","./Footer.js":"hZ9IK","./Login.js":"XRfad","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27324,7 +27324,7 @@ const Header = ()=>{
                 className: "name_logo flex justify-center items-center",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "w-20 m-4 ml-32",
+                        className: "w-20 m-4 ml-24",
                         src: (0, _const.LOGO_URL)
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/Header.js",
@@ -64724,10 +64724,10 @@ const Body = ()=>{
         lineNumber: 48,
         columnNumber: 7
     }, undefined);
-    return listofRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerContainerJsDefault.default), {}, void 0, false, {
+    return listofRestaurants?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerContainerJsDefault.default), {}, void 0, false, {
         fileName: "FoodApp/src/Components/Body.js",
         lineNumber: 55,
-        columnNumber: 5
+        columnNumber: 40
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
         children: [
@@ -64748,8 +64748,8 @@ const Body = ()=>{
                                 children: "Ratings 4.0+"
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/Body.js",
-                                lineNumber: 60,
-                                columnNumber: 11
+                                lineNumber: 59,
+                                columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: "text-neutral-400 border-solid border-2 border-slate-300 shadow-md px-2 rounded-md text-sm font-bold h-8",
@@ -64763,14 +64763,14 @@ const Body = ()=>{
                                 children: "Pure Veg"
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/Body.js",
-                                lineNumber: 72,
-                                columnNumber: 11
+                                lineNumber: 71,
+                                columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "FoodApp/src/Components/Body.js",
-                        lineNumber: 59,
-                        columnNumber: 9
+                        lineNumber: 58,
+                        columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "mr-10",
@@ -64785,8 +64785,8 @@ const Body = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/Body.js",
-                                lineNumber: 87,
-                                columnNumber: 11
+                                lineNumber: 86,
+                                columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: "ml-2 border-2 border-solid border-rgb(156,156,156) px-2  shadow-md h-8 bg-gray-50 rounded-md font-bold",
@@ -64801,55 +64801,55 @@ const Body = ()=>{
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/Body.js",
-                                lineNumber: 97,
-                                columnNumber: 11
+                                lineNumber: 96,
+                                columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "FoodApp/src/Components/Body.js",
-                        lineNumber: 86,
-                        columnNumber: 9
+                        lineNumber: 85,
+                        columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "FoodApp/src/Components/Body.js",
-                lineNumber: 58,
-                columnNumber: 7
+                lineNumber: 57,
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: "text-3xl font-bold my-6 ml-44",
                 children: "What's on your mind?"
             }, void 0, false, {
                 fileName: "FoodApp/src/Components/Body.js",
-                lineNumber: 115,
-                columnNumber: 7
+                lineNumber: 114,
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex overflow-x-scroll no-scrollbar [&::-webkit-scrollbar]:hidden mx-auto w-9/12 border-b-4 border-gray-100",
-                children: topCarousal.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _topCarousalJsDefault.default), {
+                children: !topCarousal ? null : topCarousal.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _topCarousalJsDefault.default), {
                         image: item.imageId,
                         title: item?.action?.text
                     }, item?.action?.text, false, {
                         fileName: "FoodApp/src/Components/Body.js",
-                        lineNumber: 118,
-                        columnNumber: 34
+                        lineNumber: 117,
+                        columnNumber: 58
                     }, undefined))
             }, void 0, false, {
                 fileName: "FoodApp/src/Components/Body.js",
-                lineNumber: 116,
-                columnNumber: 7
+                lineNumber: 115,
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: "my-6 ml-44 font-bold text-3xl",
                 children: "Top Resaturants in Bangalore"
             }, void 0, false, {
                 fileName: "FoodApp/src/Components/Body.js",
-                lineNumber: 122,
-                columnNumber: 7
+                lineNumber: 121,
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex flex-wrap gap-4 w-9/12 mx-auto ",
-                children: filteredRestaurants.map((res)=>{
+                children: !filteredRestaurants ? null : filteredRestaurants.map((res)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/restaurant/" + res?.info?.id,
                         className: "link",
@@ -64857,32 +64857,32 @@ const Body = ()=>{
                             resdata: res
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/Body.js",
-                            lineNumber: 134,
-                            columnNumber: 17
+                            lineNumber: 133,
+                            columnNumber: 19
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restoCardJsDefault.default), {
                             resdata: res
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/Body.js",
-                            lineNumber: 136,
-                            columnNumber: 17
+                            lineNumber: 135,
+                            columnNumber: 19
                         }, undefined)
                     }, res?.info?.id, false, {
                         fileName: "FoodApp/src/Components/Body.js",
-                        lineNumber: 128,
-                        columnNumber: 13
+                        lineNumber: 127,
+                        columnNumber: 15
                     }, undefined);
                 // return <RestoCard key={res?.info?.id} resdata={res} />
                 })
             }, void 0, false, {
                 fileName: "FoodApp/src/Components/Body.js",
-                lineNumber: 123,
-                columnNumber: 7
+                lineNumber: 122,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "FoodApp/src/Components/Body.js",
-        lineNumber: 57,
-        columnNumber: 5
+        lineNumber: 56,
+        columnNumber: 7
     }, undefined);
 };
 _s(Body, "1TD994jofPD9UJIp9D2EETe+3lQ=");
@@ -64896,7 +64896,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestoCard.js":"6d5uJ","react":"21dqq","./ShimmerContainer.js":"73mwD","react-router-dom":"9xmpe","../utils/useonlineStatus.js":"75VYg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./TopCarousal.js":"eas9B"}],"6d5uJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./RestoCard.js":"6d5uJ","react":"21dqq","./ShimmerContainer.js":"73mwD","react-router-dom":"9xmpe","../utils/useonlineStatus.js":"75VYg","./TopCarousal.js":"eas9B","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6d5uJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$62a8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -64915,7 +64915,7 @@ const RestoCard = (props)=>{
     const { resdata } = props;
     const { name, cloudinaryImageId, cuisines, avgRating, totalRatingsString } = resdata?.info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "w-[250px] h-[270px] shadow-lg overflow-visible hover:border-2 border-solid border-transparent hover:shadow-md rounded-lg px-2",
+        className: "w-[250px] h-[290px] shadow-lg overflow-visible hover:border-2 border-solid border-transparent hover:shadow-md rounded-lg px-2",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 alt: "dish_logo",
@@ -65170,15 +65170,15 @@ const ShimmerContainer = ()=>{
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "h-12 w-60 bg-gray-100 my-6 ml-44"
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                lineNumber: 28,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex flex-wrap gap-4 my-6 mx-auto w-9/12",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: shimCard
-                    }, void 0, false, {
-                        fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                        lineNumber: 29,
-                        columnNumber: 8
-                    }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: shimCard
                     }, void 0, false, {
@@ -65208,8 +65208,7 @@ const ShimmerContainer = ()=>{
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: shimCard,
-                        children: " "
+                        className: shimCard
                     }, void 0, false, {
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
                         lineNumber: 34,
@@ -65238,11 +65237,19 @@ const ShimmerContainer = ()=>{
                         fileName: "FoodApp/src/Components/ShimmerContainer.js",
                         lineNumber: 37,
                         columnNumber: 8
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: shimCard,
+                        children: " "
+                    }, void 0, false, {
+                        fileName: "FoodApp/src/Components/ShimmerContainer.js",
+                        lineNumber: 38,
+                        columnNumber: 8
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "FoodApp/src/Components/ShimmerContainer.js",
-                lineNumber: 28,
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined)
         ]
@@ -65312,7 +65319,161 @@ $RefreshReg$(_c, "TopCarousal");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/const":"fRCML"}],"eiRNd":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/const":"fRCML","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dkKLB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1d4d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1d4d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _const = require("../utils/const");
+const Help = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "my-4 flex justify-start items-center gap-2 flex-col ",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: " lg:text-5xl md:text-3xl text-2xl py-4 md:py-3 lg:py-4 text-orange-500 font-bold",
+                    children: "Help & Support"
+                }, void 0, false, {
+                    fileName: "FoodApp/src/Components/Help.js",
+                    lineNumber: 6,
+                    columnNumber: 14
+                }, undefined)
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/Help.js",
+                lineNumber: 6,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex w-12/12 md:px-16 px-4 lg:px-20 justify-center md:gap-6 gap-4 lg:gap-8 items-center flex-col lg:flex-row",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-5/12",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "lg:w-full md:w-full w-full",
+                            src: (0, _const.help)
+                        }, void 0, false, {
+                            fileName: "FoodApp/src/Components/Help.js",
+                            lineNumber: 9,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "FoodApp/src/Components/Help.js",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex justify-start items-start lg:py-8 md:py-6 py-4 lg:w-8/12 w-12/12 gap-4 flex-col",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex lg:py-4 md:py-3 py-2 lg:px-8 md:px-6 px-3 justify-start items-start flex-col bg-white shadow-lg",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "lg:text-base md:text-base text-sm text-gray-900 font-semibold lg:tracking-normal tracking-wide",
+                                        children: "What is Food Bazaar Customer Care Number?"
+                                    }, void 0, false, {
+                                        fileName: "FoodApp/src/Components/Help.js",
+                                        lineNumber: 13,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "lg:pt-3 md:pt-2 pt-1 md:text-sm text-xs lg:text-sm text-gray-400 font-normal lg:tracking-wide tracking-wider",
+                                        children: "We've upgraded our customer support to a chat-based system for swift issue resolution. No more navigating through IVRS complexities. Just search for your issue in the help section, start a chat, and a care executive will assist you shortly."
+                                    }, void 0, false, {
+                                        fileName: "FoodApp/src/Components/Help.js",
+                                        lineNumber: 14,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "FoodApp/src/Components/Help.js",
+                                lineNumber: 12,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex lg:py-4 md:py-3 py-2 lg:px-8 md:px-6 px-3 justify-start items-start flex-col bg-white shadow-lg",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "lg:text-base md:text-base text-sm text-gray-900 font-semibold lg:tracking-normal tracking-wide",
+                                        children: "I did not receive my OTP on SMS"
+                                    }, void 0, false, {
+                                        fileName: "FoodApp/src/Components/Help.js",
+                                        lineNumber: 17,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "lg:pt-3 md:pt-2 pt-1 md:text-sm text-xs lg:text-sm text-gray-400 font-normal lg:tracking-wide tracking-wider",
+                                        children: "If you're not receiving the OTP, it's usually due to a network issue. Please check your mobile network settings and try generating a new OTP. If the problem persists, you might want to restart your device or reach out to us at support@foodbazaar.in for assistance."
+                                    }, void 0, false, {
+                                        fileName: "FoodApp/src/Components/Help.js",
+                                        lineNumber: 18,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "FoodApp/src/Components/Help.js",
+                                lineNumber: 16,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex lg:py-4 md:py-3 py-2 lg:px-8 md:px-6 px-3 justify-start items-start flex-col bg-white shadow-lg",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "lg:text-base md:text-base text-sm text-gray-900 font-semibold lg:tracking-normal tracking-wide",
+                                        children: "I am unable to find the restaurant I'm looking for?"
+                                    }, void 0, false, {
+                                        fileName: "FoodApp/src/Components/Help.js",
+                                        lineNumber: 23,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "lg:pt-3 md:pt-2 pt-1 md:text-sm text-xs lg:text-sm text-gray-400 font-normal lg:tracking-wide tracking-wider",
+                                        children: "The restaurant might either be closed at the moment or temporarily not serviceable due to low rider availability near the restaurant. Please try again after some time or consider ordering from a different eatery."
+                                    }, void 0, false, {
+                                        fileName: "FoodApp/src/Components/Help.js",
+                                        lineNumber: 24,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "FoodApp/src/Components/Help.js",
+                                lineNumber: 22,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "FoodApp/src/Components/Help.js",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "FoodApp/src/Components/Help.js",
+                lineNumber: 7,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "FoodApp/src/Components/Help.js",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Help;
+exports.default = Help;
+var _c;
+$RefreshReg$(_c, "Help");
+
+  $parcel$ReactRefreshHelpers$1d4d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../utils/const":"fRCML","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eiRNd":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$f982 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -65381,7 +65542,7 @@ var _s = $RefreshSig$();
 const Error = ()=>{
     _s();
     const err = (0, _reactRouterDom.useRouteError)();
-    console.log(err);
+    // console.log(err);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "w-12/12 h-screen flex bg-slate-100 ",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -65486,6 +65647,8 @@ var _restaurantCategoryDefault = parcelHelpers.interopDefault(_restaurantCategor
 var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
 var _reactFontawesome = require("@fortawesome/react-fontawesome");
 var _react = require("react");
+var _menuShimmer = require("./MenuShimmer");
+var _menuShimmerDefault = parcelHelpers.interopDefault(_menuShimmer);
 var _s = $RefreshSig$();
 const RestaurantMenu = ()=>{
     _s();
@@ -65493,10 +65656,10 @@ const RestaurantMenu = ()=>{
     const [showIndex, setshowIndex] = (0, _react.useState)(null);
     let resInfo = (0, _useRestaurantMenuDefault.default)(resId);
     // console.log(resInfo?.cards[2]?.card?.card?.info)
-    if (resInfo === null) /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerContainerDefault.default), {}, void 0, false, {
+    if (resInfo === null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _menuShimmerDefault.default), {}, void 0, false, {
         fileName: "FoodApp/src/Components/RestaurantMenu.js",
-        lineNumber: 16,
-        columnNumber: 25
+        lineNumber: 17,
+        columnNumber: 32
     }, undefined);
     else {
         const { name, cloudinaryImageId, costForTwoMessage, cuisines, avgRatingString, totalRatingsString } = resInfo?.cards[2]?.card?.card?.info;
@@ -65515,18 +65678,18 @@ const RestaurantMenu = ()=>{
                     children: name
                 }, void 0, false, {
                     fileName: "FoodApp/src/Components/RestaurantMenu.js",
-                    lineNumber: 33,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "flex justify-center",
+                    className: "flex justify-center mt-4",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
                             icon: (0, _freeSolidSvgIcons.faStar),
                             className: "mt-[2px] mx-2"
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/RestaurantMenu.js",
-                            lineNumber: 35,
+                            lineNumber: 36,
                             columnNumber: 9
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -65539,7 +65702,7 @@ const RestaurantMenu = ()=>{
                             ]
                         }, void 0, true, {
                             fileName: "FoodApp/src/Components/RestaurantMenu.js",
-                            lineNumber: 36,
+                            lineNumber: 37,
                             columnNumber: 9
                         }, undefined),
                         "- \u20B9",
@@ -65548,13 +65711,13 @@ const RestaurantMenu = ()=>{
                             children: costForTwoMessage
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/RestaurantMenu.js",
-                            lineNumber: 37,
+                            lineNumber: 38,
                             columnNumber: 9
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "FoodApp/src/Components/RestaurantMenu.js",
-                    lineNumber: 34,
+                    lineNumber: 35,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -65562,7 +65725,7 @@ const RestaurantMenu = ()=>{
                     children: cuisines.join(", ")
                 }, void 0, false, {
                     fileName: "FoodApp/src/Components/RestaurantMenu.js",
-                    lineNumber: 39,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -65573,19 +65736,19 @@ const RestaurantMenu = ()=>{
                             setshowIndex: ()=>setshowIndex(Index)
                         }, category?.card?.card?.title, false, {
                             fileName: "FoodApp/src/Components/RestaurantMenu.js",
-                            lineNumber: 42,
+                            lineNumber: 43,
                             columnNumber: 17
                         }, undefined);
                     })
                 }, void 0, false, {
                     fileName: "FoodApp/src/Components/RestaurantMenu.js",
-                    lineNumber: 40,
+                    lineNumber: 41,
                     columnNumber: 8
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "FoodApp/src/Components/RestaurantMenu.js",
-            lineNumber: 32,
+            lineNumber: 33,
             columnNumber: 7
         }, undefined);
     }
@@ -65606,7 +65769,7 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/useRestaurantMenu":"5qgk0","./ShimmerContainer":"73mwD","react-router-dom":"9xmpe","./RestaurantCategory":"6u81D","@fortawesome/free-solid-svg-icons":"5lkdy","@fortawesome/react-fontawesome":"clIT3","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5qgk0":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../utils/useRestaurantMenu":"5qgk0","./ShimmerContainer":"73mwD","react-router-dom":"9xmpe","./RestaurantCategory":"6u81D","@fortawesome/free-solid-svg-icons":"5lkdy","@fortawesome/react-fontawesome":"clIT3","react":"21dqq","./MenuShimmer":"fjHY6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5qgk0":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2ef2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -65758,6 +65921,9 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _cartSlice = require("../utils/Redux Slices/CartSlice");
 var _const = require("../utils/const");
 var _reactRedux = require("react-redux");
+var _react = require("react");
+var _reactToastify = require("react-toastify");
+var _reactToastifyCss = require("react-toastify/dist/ReactToastify.css");
 var _s = $RefreshSig$();
 const ItemList = (props)=>{
     _s();
@@ -65768,84 +65934,95 @@ const ItemList = (props)=>{
     const handlerAdd = (item)=>{
         // console.log(item)
         dispatch((0, _cartSlice.addItem)(item));
+        // setpopup(true)
+        (0, _reactToastify.toast)("Item added to the cart !");
     };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "mb-6 border-b-2 border-gray-300 pb-4 ",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "flex justify-between",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "flex-col w-9/12 pl-2",
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "my-6 border-b-2 border-gray-300 pb-4 ",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex justify-between",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "font-bold text-md",
-                            children: name
-                        }, void 0, false, {
-                            fileName: "FoodApp/src/Components/ItemList.js",
-                            lineNumber: 21,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "font-bold",
+                            className: "flex-col w-9/12 pl-2",
                             children: [
-                                "\u20B9",
-                                defaultPrice / 100 || price / 100
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "font-bold text-md",
+                                    children: name
+                                }, void 0, false, {
+                                    fileName: "FoodApp/src/Components/ItemList.js",
+                                    lineNumber: 28,
+                                    columnNumber: 11
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "font-bold",
+                                    children: [
+                                        "\u20B9",
+                                        defaultPrice / 100 || price / 100
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "FoodApp/src/Components/ItemList.js",
+                                    lineNumber: 29,
+                                    columnNumber: 11
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "tex-color-gray-300 mt-2",
+                                    children: description
+                                }, void 0, false, {
+                                    fileName: "FoodApp/src/Components/ItemList.js",
+                                    lineNumber: 30,
+                                    columnNumber: 11
+                                }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "FoodApp/src/Components/ItemList.js",
-                            lineNumber: 22,
-                            columnNumber: 11
+                            lineNumber: 27,
+                            columnNumber: 9
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "tex-color-gray-300 mt-2",
-                            children: description
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "absolute rounded-lg text-green-600 bg-white px-4 py-1 mt-24 ml-10 font-bold shadow-lg hover:bg-gray-400 hover:text-white",
+                                    onClick: ()=>handlerAdd(item),
+                                    children: "Add +"
+                                }, void 0, false, {
+                                    fileName: "FoodApp/src/Components/ItemList.js",
+                                    lineNumber: 33,
+                                    columnNumber: 11
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _const.CDN_URL) + imageId,
+                                    className: "bg-cover w-[156px] h-[144px] p-2 mr-2"
+                                }, void 0, false, {
+                                    fileName: "FoodApp/src/Components/ItemList.js",
+                                    lineNumber: 40,
+                                    columnNumber: 11
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
                             fileName: "FoodApp/src/Components/ItemList.js",
-                            lineNumber: 23,
-                            columnNumber: 11
+                            lineNumber: 32,
+                            columnNumber: 9
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "FoodApp/src/Components/ItemList.js",
-                    lineNumber: 20,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "absolute rounded-lg text-green-600 bg-white px-4 py-1 mt-24 ml-10 font-bold shadow-lg hover:bg-gray-400 hover:text-white",
-                            onClick: ()=>handlerAdd(item),
-                            children: "Add +"
-                        }, void 0, false, {
-                            fileName: "FoodApp/src/Components/ItemList.js",
-                            lineNumber: 26,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _const.CDN_URL) + imageId,
-                            className: "bg-cover w-[156px] h-[144px] p-4 mr-2"
-                        }, void 0, false, {
-                            fileName: "FoodApp/src/Components/ItemList.js",
-                            lineNumber: 33,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "FoodApp/src/Components/ItemList.js",
-                    lineNumber: 25,
-                    columnNumber: 9
+                    lineNumber: 26,
+                    columnNumber: 7
                 }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "FoodApp/src/Components/ItemList.js",
-            lineNumber: 19,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "FoodApp/src/Components/ItemList.js",
-        lineNumber: 18,
-        columnNumber: 5
-    }, undefined);
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/ItemList.js",
+                lineNumber: 25,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactToastify.ToastContainer), {}, void 0, false, {
+                fileName: "FoodApp/src/Components/ItemList.js",
+                lineNumber: 49,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true);
 };
 _s(ItemList, "rgTLoBID190wEKCp9+G8W6F7A5M=", false, function() {
     return [
@@ -65862,7 +66039,787 @@ $RefreshReg$(_c, "ItemList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/Redux Slices/CartSlice":"g8H9A","../utils/const":"fRCML","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b2qck":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../utils/Redux Slices/CartSlice":"g8H9A","../utils/const":"fRCML","react-redux":"62sf7","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-toastify":"kSvyQ","react-toastify/dist/ReactToastify.css":"gJP2Y"}],"kSvyQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Bounce", ()=>H);
+parcelHelpers.export(exports, "Flip", ()=>Y);
+parcelHelpers.export(exports, "Icons", ()=>z);
+parcelHelpers.export(exports, "Slide", ()=>F);
+parcelHelpers.export(exports, "ToastContainer", ()=>Q);
+parcelHelpers.export(exports, "Zoom", ()=>X);
+parcelHelpers.export(exports, "collapseToast", ()=>f);
+parcelHelpers.export(exports, "cssTransition", ()=>g);
+parcelHelpers.export(exports, "toast", ()=>B);
+parcelHelpers.export(exports, "useToast", ()=>N);
+parcelHelpers.export(exports, "useToastContainer", ()=>L);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+"use client";
+const c = (e)=>"number" == typeof e && !isNaN(e), d = (e)=>"string" == typeof e, u = (e)=>"function" == typeof e, p = (e)=>d(e) || u(e) ? e : null, m = (e)=>(0, _react.isValidElement)(e) || d(e) || u(e) || c(e);
+function f(e, t, n) {
+    void 0 === n && (n = 300);
+    const { scrollHeight: o, style: s } = e;
+    requestAnimationFrame(()=>{
+        s.minHeight = "initial", s.height = o + "px", s.transition = `all ${n}ms`, requestAnimationFrame(()=>{
+            s.height = "0", s.padding = "0", s.margin = "0", setTimeout(t, n);
+        });
+    });
+}
+function g(t) {
+    let { enter: a, exit: r, appendPosition: i = !1, collapse: l = !0, collapseDuration: c = 300 } = t;
+    return function(t) {
+        let { children: d, position: u, preventExitTransition: p, done: m, nodeRef: g, isIn: y, playToast: v } = t;
+        const h = i ? `${a}--${u}` : a, T = i ? `${r}--${u}` : r, E = (0, _react.useRef)(0);
+        return (0, _react.useLayoutEffect)(()=>{
+            const e = g.current, t = h.split(" "), n = (o)=>{
+                o.target === g.current && (v(), e.removeEventListener("animationend", n), e.removeEventListener("animationcancel", n), 0 === E.current && "animationcancel" !== o.type && e.classList.remove(...t));
+            };
+            e.classList.add(...t), e.addEventListener("animationend", n), e.addEventListener("animationcancel", n);
+        }, []), (0, _react.useEffect)(()=>{
+            const e = g.current, t = ()=>{
+                e.removeEventListener("animationend", t), l ? f(e, m, c) : m();
+            };
+            y || (p ? t() : (E.current = 1, e.className += ` ${T}`, e.addEventListener("animationend", t)));
+        }, [
+            y
+        ]), (0, _reactDefault.default).createElement((0, _reactDefault.default).Fragment, null, d);
+    };
+}
+function y(e, t) {
+    return null != e ? {
+        content: e.content,
+        containerId: e.props.containerId,
+        id: e.props.toastId,
+        theme: e.props.theme,
+        type: e.props.type,
+        data: e.props.data || {},
+        isLoading: e.props.isLoading,
+        icon: e.props.icon,
+        status: t
+    } : {};
+}
+const v = new Map;
+let h = [];
+const T = new Set, E = (e)=>T.forEach((t)=>t(e)), b = ()=>v.size > 0;
+function I(e, t) {
+    var n;
+    if (t) return !(null == (n = v.get(t)) || !n.isToastActive(e));
+    let o = !1;
+    return v.forEach((t)=>{
+        t.isToastActive(e) && (o = !0);
+    }), o;
+}
+function _(e, t) {
+    m(e) && (b() || h.push({
+        content: e,
+        options: t
+    }), v.forEach((n)=>{
+        n.buildToast(e, t);
+    }));
+}
+function C(e, t) {
+    v.forEach((n)=>{
+        null != t && null != t && t.containerId ? (null == t ? void 0 : t.containerId) === n.id && n.toggle(e, null == t ? void 0 : t.id) : n.toggle(e, null == t ? void 0 : t.id);
+    });
+}
+function L(e) {
+    const { subscribe: o, getSnapshot: s, setProps: i } = (0, _react.useRef)(function(e) {
+        const n = e.containerId || 1;
+        return {
+            subscribe (o) {
+                const s = function(e, n, o) {
+                    let s = 1, r = 0, i = [], l = [], f = [], g = n;
+                    const v = new Map, h = new Set, T = ()=>{
+                        f = Array.from(v.values()), h.forEach((e)=>e());
+                    }, E = (e)=>{
+                        l = null == e ? [] : l.filter((t)=>t !== e), T();
+                    }, b = (e)=>{
+                        const { toastId: n, onOpen: s, updateId: a, children: r } = e.props, i = null == a;
+                        e.staleId && v.delete(e.staleId), v.set(n, e), l = [
+                            ...l,
+                            e.props.toastId
+                        ].filter((t)=>t !== e.staleId), T(), o(y(e, i ? "added" : "updated")), i && u(s) && s((0, _react.isValidElement)(r) && r.props);
+                    };
+                    return {
+                        id: e,
+                        props: g,
+                        observe: (e)=>(h.add(e), ()=>h.delete(e)),
+                        toggle: (e, t)=>{
+                            v.forEach((n)=>{
+                                null != t && t !== n.props.toastId || u(n.toggle) && n.toggle(e);
+                            });
+                        },
+                        removeToast: E,
+                        toasts: v,
+                        clearQueue: ()=>{
+                            r -= i.length, i = [];
+                        },
+                        buildToast: (n, l)=>{
+                            if (((t)=>{
+                                let { containerId: n, toastId: o, updateId: s } = t;
+                                const a = n ? n !== e : 1 !== e, r = v.has(o) && null == s;
+                                return a || r;
+                            })(l)) return;
+                            const { toastId: f, updateId: h, data: I, staleId: _, delay: C } = l, L = ()=>{
+                                E(f);
+                            }, N = null == h;
+                            N && r++;
+                            const $ = {
+                                ...g,
+                                style: g.toastStyle,
+                                key: s++,
+                                ...Object.fromEntries(Object.entries(l).filter((e)=>{
+                                    let [t, n] = e;
+                                    return null != n;
+                                })),
+                                toastId: f,
+                                updateId: h,
+                                data: I,
+                                closeToast: L,
+                                isIn: !1,
+                                className: p(l.className || g.toastClassName),
+                                bodyClassName: p(l.bodyClassName || g.bodyClassName),
+                                progressClassName: p(l.progressClassName || g.progressClassName),
+                                autoClose: !l.isLoading && (w = l.autoClose, k = g.autoClose, !1 === w || c(w) && w > 0 ? w : k),
+                                deleteToast () {
+                                    const e = v.get(f), { onClose: n, children: s } = e.props;
+                                    u(n) && n((0, _react.isValidElement)(s) && s.props), o(y(e, "removed")), v.delete(f), r--, r < 0 && (r = 0), i.length > 0 ? b(i.shift()) : T();
+                                }
+                            };
+                            var w, k;
+                            $.closeButton = g.closeButton, !1 === l.closeButton || m(l.closeButton) ? $.closeButton = l.closeButton : !0 === l.closeButton && ($.closeButton = !m(g.closeButton) || g.closeButton);
+                            let P = n;
+                            (0, _react.isValidElement)(n) && !d(n.type) ? P = (0, _react.cloneElement)(n, {
+                                closeToast: L,
+                                toastProps: $,
+                                data: I
+                            }) : u(n) && (P = n({
+                                closeToast: L,
+                                toastProps: $,
+                                data: I
+                            }));
+                            const M = {
+                                content: P,
+                                props: $,
+                                staleId: _
+                            };
+                            g.limit && g.limit > 0 && r > g.limit && N ? i.push(M) : c(C) ? setTimeout(()=>{
+                                b(M);
+                            }, C) : b(M);
+                        },
+                        setProps (e) {
+                            g = e;
+                        },
+                        setToggle: (e, t)=>{
+                            v.get(e).toggle = t;
+                        },
+                        isToastActive: (e)=>l.some((t)=>t === e),
+                        getSnapshot: ()=>g.newestOnTop ? f.reverse() : f
+                    };
+                }(n, e, E);
+                v.set(n, s);
+                const r = s.observe(o);
+                return h.forEach((e)=>_(e.content, e.options)), h = [], ()=>{
+                    r(), v.delete(n);
+                };
+            },
+            setProps (e) {
+                var t;
+                null == (t = v.get(n)) || t.setProps(e);
+            },
+            getSnapshot () {
+                var e;
+                return null == (e = v.get(n)) ? void 0 : e.getSnapshot();
+            }
+        };
+    }(e)).current;
+    i(e);
+    const l = (0, _react.useSyncExternalStore)(o, s, s);
+    return {
+        getToastToRender: function(e) {
+            if (!l) return [];
+            const t = new Map;
+            return l.forEach((e)=>{
+                const { position: n } = e.props;
+                t.has(n) || t.set(n, []), t.get(n).push(e);
+            }), Array.from(t, (t)=>e(t[0], t[1]));
+        },
+        isToastActive: I,
+        count: null == l ? void 0 : l.length
+    };
+}
+function N(e) {
+    const [t, o] = (0, _react.useState)(!1), [a, r] = (0, _react.useState)(!1), l = (0, _react.useRef)(null), c = (0, _react.useRef)({
+        start: 0,
+        delta: 0,
+        removalDistance: 0,
+        canCloseOnClick: !0,
+        canDrag: !1,
+        didMove: !1
+    }).current, { autoClose: d, pauseOnHover: u, closeToast: p, onClick: m, closeOnClick: f } = e;
+    var g, y;
+    function h() {
+        o(!0);
+    }
+    function T() {
+        o(!1);
+    }
+    function E(n) {
+        const o = l.current;
+        c.canDrag && o && (c.didMove = !0, t && T(), c.delta = "x" === e.draggableDirection ? n.clientX - c.start : n.clientY - c.start, c.start !== n.clientX && (c.canCloseOnClick = !1), o.style.transform = `translate3d(${"x" === e.draggableDirection ? `${c.delta}px, var(--y)` : `0, calc(${c.delta}px + var(--y))`},0)`, o.style.opacity = "" + (1 - Math.abs(c.delta / c.removalDistance)));
+    }
+    function b() {
+        document.removeEventListener("pointermove", E), document.removeEventListener("pointerup", b);
+        const t = l.current;
+        if (c.canDrag && c.didMove && t) {
+            if (c.canDrag = !1, Math.abs(c.delta) > c.removalDistance) return r(!0), e.closeToast(), void e.collapseAll();
+            t.style.transition = "transform 0.2s, opacity 0.2s", t.style.removeProperty("transform"), t.style.removeProperty("opacity");
+        }
+    }
+    null == (y = v.get((g = {
+        id: e.toastId,
+        containerId: e.containerId,
+        fn: o
+    }).containerId || 1)) || y.setToggle(g.id, g.fn), (0, _react.useEffect)(()=>{
+        if (e.pauseOnFocusLoss) return document.hasFocus() || T(), window.addEventListener("focus", h), window.addEventListener("blur", T), ()=>{
+            window.removeEventListener("focus", h), window.removeEventListener("blur", T);
+        };
+    }, [
+        e.pauseOnFocusLoss
+    ]);
+    const I = {
+        onPointerDown: function(t) {
+            if (!0 === e.draggable || e.draggable === t.pointerType) {
+                c.didMove = !1, document.addEventListener("pointermove", E), document.addEventListener("pointerup", b);
+                const n = l.current;
+                c.canCloseOnClick = !0, c.canDrag = !0, n.style.transition = "none", "x" === e.draggableDirection ? (c.start = t.clientX, c.removalDistance = n.offsetWidth * (e.draggablePercent / 100)) : (c.start = t.clientY, c.removalDistance = n.offsetHeight * (80 === e.draggablePercent ? 1.5 * e.draggablePercent : e.draggablePercent) / 100);
+            }
+        },
+        onPointerUp: function(t) {
+            const { top: n, bottom: o, left: s, right: a } = l.current.getBoundingClientRect();
+            "touchend" !== t.nativeEvent.type && e.pauseOnHover && t.clientX >= s && t.clientX <= a && t.clientY >= n && t.clientY <= o ? T() : h();
+        }
+    };
+    return d && u && (I.onMouseEnter = T, e.stacked || (I.onMouseLeave = h)), f && (I.onClick = (e)=>{
+        m && m(e), c.canCloseOnClick && p();
+    }), {
+        playToast: h,
+        pauseToast: T,
+        isRunning: t,
+        preventExitTransition: a,
+        toastRef: l,
+        eventHandlers: I
+    };
+}
+function $(t) {
+    let { delay: n, isRunning: o, closeToast: s, type: a = "default", hide: r, className: i, style: c, controlledProgress: d, progress: p, rtl: m, isIn: f, theme: g } = t;
+    const y = r || d && 0 === p, v = {
+        ...c,
+        animationDuration: `${n}ms`,
+        animationPlayState: o ? "running" : "paused"
+    };
+    d && (v.transform = `scaleX(${p})`);
+    const h = (0, _clsxDefault.default)("Toastify__progress-bar", d ? "Toastify__progress-bar--controlled" : "Toastify__progress-bar--animated", `Toastify__progress-bar-theme--${g}`, `Toastify__progress-bar--${a}`, {
+        "Toastify__progress-bar--rtl": m
+    }), T = u(i) ? i({
+        rtl: m,
+        type: a,
+        defaultClassName: h
+    }) : (0, _clsxDefault.default)(h, i), E = {
+        [d && p >= 1 ? "onTransitionEnd" : "onAnimationEnd"]: d && p < 1 ? null : ()=>{
+            f && s();
+        }
+    };
+    return (0, _reactDefault.default).createElement("div", {
+        className: "Toastify__progress-bar--wrp",
+        "data-hidden": y
+    }, (0, _reactDefault.default).createElement("div", {
+        className: `Toastify__progress-bar--bg Toastify__progress-bar-theme--${g} Toastify__progress-bar--${a}`
+    }), (0, _reactDefault.default).createElement("div", {
+        role: "progressbar",
+        "aria-hidden": y ? "true" : "false",
+        "aria-label": "notification timer",
+        className: T,
+        style: v,
+        ...E
+    }));
+}
+let w = 1;
+const k = ()=>"" + w++;
+function P(e) {
+    return e && (d(e.toastId) || c(e.toastId)) ? e.toastId : k();
+}
+function M(e, t) {
+    return _(e, t), t.toastId;
+}
+function x(e, t) {
+    return {
+        ...t,
+        type: t && t.type || e,
+        toastId: P(t)
+    };
+}
+function A(e) {
+    return (t, n)=>M(t, x(e, n));
+}
+function B(e, t) {
+    return M(e, x("default", t));
+}
+B.loading = (e, t)=>M(e, x("default", {
+        isLoading: !0,
+        autoClose: !1,
+        closeOnClick: !1,
+        closeButton: !1,
+        draggable: !1,
+        ...t
+    })), B.promise = function(e, t, n) {
+    let o, { pending: s, error: a, success: r } = t;
+    s && (o = d(s) ? B.loading(s, n) : B.loading(s.render, {
+        ...n,
+        ...s
+    }));
+    const i = {
+        isLoading: null,
+        autoClose: null,
+        closeOnClick: null,
+        closeButton: null,
+        draggable: null
+    }, l = (e, t, s)=>{
+        if (null == t) return void B.dismiss(o);
+        const a = {
+            type: e,
+            ...i,
+            ...n,
+            data: s
+        }, r = d(t) ? {
+            render: t
+        } : t;
+        return o ? B.update(o, {
+            ...a,
+            ...r
+        }) : B(r.render, {
+            ...a,
+            ...r
+        }), s;
+    }, c = u(e) ? e() : e;
+    return c.then((e)=>l("success", r, e)).catch((e)=>l("error", a, e)), c;
+}, B.success = A("success"), B.info = A("info"), B.error = A("error"), B.warning = A("warning"), B.warn = B.warning, B.dark = (e, t)=>M(e, x("default", {
+        theme: "dark",
+        ...t
+    })), B.dismiss = function(e) {
+    !function(e) {
+        var t;
+        if (b()) {
+            if (null == e || d(t = e) || c(t)) v.forEach((t)=>{
+                t.removeToast(e);
+            });
+            else if (e && ("containerId" in e || "id" in e)) {
+                const t = v.get(e.containerId);
+                t ? t.removeToast(e.id) : v.forEach((t)=>{
+                    t.removeToast(e.id);
+                });
+            }
+        } else h = h.filter((t)=>null != e && t.options.toastId !== e);
+    }(e);
+}, B.clearWaitingQueue = function(e) {
+    void 0 === e && (e = {}), v.forEach((t)=>{
+        !t.props.limit || e.containerId && t.id !== e.containerId || t.clearQueue();
+    });
+}, B.isActive = I, B.update = function(e, t) {
+    void 0 === t && (t = {});
+    const n = ((e, t)=>{
+        var n;
+        let { containerId: o } = t;
+        return null == (n = v.get(o || 1)) ? void 0 : n.toasts.get(e);
+    })(e, t);
+    if (n) {
+        const { props: o, content: s } = n, a = {
+            delay: 100,
+            ...o,
+            ...t,
+            toastId: t.toastId || e,
+            updateId: k()
+        };
+        a.toastId !== e && (a.staleId = e);
+        const r = a.render || s;
+        delete a.render, M(r, a);
+    }
+}, B.done = (e)=>{
+    B.update(e, {
+        progress: 1
+    });
+}, B.onChange = function(e) {
+    return T.add(e), ()=>{
+        T.delete(e);
+    };
+}, B.play = (e)=>C(!0, e), B.pause = (e)=>C(!1, e);
+const O = "undefined" != typeof window ? (0, _react.useLayoutEffect) : (0, _react.useEffect), D = (t)=>{
+    let { theme: n, type: o, isLoading: s, ...a } = t;
+    return (0, _reactDefault.default).createElement("svg", {
+        viewBox: "0 0 24 24",
+        width: "100%",
+        height: "100%",
+        fill: "colored" === n ? "currentColor" : `var(--toastify-icon-color-${o})`,
+        ...a
+    });
+}, z = {
+    info: function(t) {
+        return (0, _reactDefault.default).createElement(D, {
+            ...t
+        }, (0, _reactDefault.default).createElement("path", {
+            d: "M12 0a12 12 0 1012 12A12.013 12.013 0 0012 0zm.25 5a1.5 1.5 0 11-1.5 1.5 1.5 1.5 0 011.5-1.5zm2.25 13.5h-4a1 1 0 010-2h.75a.25.25 0 00.25-.25v-4.5a.25.25 0 00-.25-.25h-.75a1 1 0 010-2h1a2 2 0 012 2v4.75a.25.25 0 00.25.25h.75a1 1 0 110 2z"
+        }));
+    },
+    warning: function(t) {
+        return (0, _reactDefault.default).createElement(D, {
+            ...t
+        }, (0, _reactDefault.default).createElement("path", {
+            d: "M23.32 17.191L15.438 2.184C14.728.833 13.416 0 11.996 0c-1.42 0-2.733.833-3.443 2.184L.533 17.448a4.744 4.744 0 000 4.368C1.243 23.167 2.555 24 3.975 24h16.05C22.22 24 24 22.044 24 19.632c0-.904-.251-1.746-.68-2.44zm-9.622 1.46c0 1.033-.724 1.823-1.698 1.823s-1.698-.79-1.698-1.822v-.043c0-1.028.724-1.822 1.698-1.822s1.698.79 1.698 1.822v.043zm.039-12.285l-.84 8.06c-.057.581-.408.943-.897.943-.49 0-.84-.367-.896-.942l-.84-8.065c-.057-.624.25-1.095.779-1.095h1.91c.528.005.84.476.784 1.1z"
+        }));
+    },
+    success: function(t) {
+        return (0, _reactDefault.default).createElement(D, {
+            ...t
+        }, (0, _reactDefault.default).createElement("path", {
+            d: "M12 0a12 12 0 1012 12A12.014 12.014 0 0012 0zm6.927 8.2l-6.845 9.289a1.011 1.011 0 01-1.43.188l-4.888-3.908a1 1 0 111.25-1.562l4.076 3.261 6.227-8.451a1 1 0 111.61 1.183z"
+        }));
+    },
+    error: function(t) {
+        return (0, _reactDefault.default).createElement(D, {
+            ...t
+        }, (0, _reactDefault.default).createElement("path", {
+            d: "M11.983 0a12.206 12.206 0 00-8.51 3.653A11.8 11.8 0 000 12.207 11.779 11.779 0 0011.8 24h.214A12.111 12.111 0 0024 11.791 11.766 11.766 0 0011.983 0zM10.5 16.542a1.476 1.476 0 011.449-1.53h.027a1.527 1.527 0 011.523 1.47 1.475 1.475 0 01-1.449 1.53h-.027a1.529 1.529 0 01-1.523-1.47zM11 12.5v-6a1 1 0 012 0v6a1 1 0 11-2 0z"
+        }));
+    },
+    spinner: function() {
+        return (0, _reactDefault.default).createElement("div", {
+            className: "Toastify__spinner"
+        });
+    }
+}, R = (n)=>{
+    const { isRunning: o, preventExitTransition: s, toastRef: r, eventHandlers: i, playToast: c } = N(n), { closeButton: d, children: p, autoClose: m, onClick: f, type: g, hideProgressBar: y, closeToast: v, transition: h, position: T, className: E, style: b, bodyClassName: I, bodyStyle: _, progressClassName: C, progressStyle: L, updateId: w, role: k, progress: P, rtl: M, toastId: x, deleteToast: A, isIn: B, isLoading: O, closeOnClick: D, theme: R } = n, S = (0, _clsxDefault.default)("Toastify__toast", `Toastify__toast-theme--${R}`, `Toastify__toast--${g}`, {
+        "Toastify__toast--rtl": M
+    }, {
+        "Toastify__toast--close-on-click": D
+    }), H = u(E) ? E({
+        rtl: M,
+        position: T,
+        type: g,
+        defaultClassName: S
+    }) : (0, _clsxDefault.default)(S, E), F = function(e) {
+        let { theme: n, type: o, isLoading: s, icon: r } = e, i = null;
+        const l = {
+            theme: n,
+            type: o
+        };
+        return !1 === r || (u(r) ? i = r({
+            ...l,
+            isLoading: s
+        }) : (0, _react.isValidElement)(r) ? i = (0, _react.cloneElement)(r, l) : s ? i = z.spinner() : ((e)=>e in z)(o) && (i = z[o](l))), i;
+    }(n), X = !!P || !m, Y = {
+        closeToast: v,
+        type: g,
+        theme: R
+    };
+    let q = null;
+    return !1 === d || (q = u(d) ? d(Y) : (0, _react.isValidElement)(d) ? (0, _react.cloneElement)(d, Y) : function(t) {
+        let { closeToast: n, theme: o, ariaLabel: s = "close" } = t;
+        return (0, _reactDefault.default).createElement("button", {
+            className: `Toastify__close-button Toastify__close-button--${o}`,
+            type: "button",
+            onClick: (e)=>{
+                e.stopPropagation(), n(e);
+            },
+            "aria-label": s
+        }, (0, _reactDefault.default).createElement("svg", {
+            "aria-hidden": "true",
+            viewBox: "0 0 14 16"
+        }, (0, _reactDefault.default).createElement("path", {
+            fillRule: "evenodd",
+            d: "M7.71 8.23l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75L1 11.98l3.75-3.75L1 4.48 2.48 3l3.75 3.75L9.98 3l1.48 1.48-3.75 3.75z"
+        })));
+    }(Y)), (0, _reactDefault.default).createElement(h, {
+        isIn: B,
+        done: A,
+        position: T,
+        preventExitTransition: s,
+        nodeRef: r,
+        playToast: c
+    }, (0, _reactDefault.default).createElement("div", {
+        id: x,
+        onClick: f,
+        "data-in": B,
+        className: H,
+        ...i,
+        style: b,
+        ref: r
+    }, (0, _reactDefault.default).createElement("div", {
+        ...B && {
+            role: k
+        },
+        className: u(I) ? I({
+            type: g
+        }) : (0, _clsxDefault.default)("Toastify__toast-body", I),
+        style: _
+    }, null != F && (0, _reactDefault.default).createElement("div", {
+        className: (0, _clsxDefault.default)("Toastify__toast-icon", {
+            "Toastify--animate-icon Toastify__zoom-enter": !O
+        })
+    }, F), (0, _reactDefault.default).createElement("div", null, p)), q, (0, _reactDefault.default).createElement($, {
+        ...w && !X ? {
+            key: `pb-${w}`
+        } : {},
+        rtl: M,
+        theme: R,
+        delay: m,
+        isRunning: o,
+        isIn: B,
+        closeToast: v,
+        hide: y,
+        type: g,
+        style: L,
+        className: C,
+        controlledProgress: X,
+        progress: P || 0
+    })));
+}, S = function(e, t) {
+    return void 0 === t && (t = !1), {
+        enter: `Toastify--animate Toastify__${e}-enter`,
+        exit: `Toastify--animate Toastify__${e}-exit`,
+        appendPosition: t
+    };
+}, H = g(S("bounce", !0)), F = g(S("slide", !0)), X = g(S("zoom")), Y = g(S("flip")), q = {
+    position: "top-right",
+    transition: H,
+    autoClose: 5e3,
+    closeButton: !0,
+    pauseOnHover: !0,
+    pauseOnFocusLoss: !0,
+    draggable: "touch",
+    draggablePercent: 80,
+    draggableDirection: "x",
+    role: "alert",
+    theme: "light"
+};
+function Q(t) {
+    let o = {
+        ...q,
+        ...t
+    };
+    const s = t.stacked, [a, r] = (0, _react.useState)(!0), c = (0, _react.useRef)(null), { getToastToRender: d, isToastActive: m, count: f } = L(o), { className: g, style: y, rtl: v, containerId: h } = o;
+    function T(e) {
+        const t = (0, _clsxDefault.default)("Toastify__toast-container", `Toastify__toast-container--${e}`, {
+            "Toastify__toast-container--rtl": v
+        });
+        return u(g) ? g({
+            position: e,
+            rtl: v,
+            defaultClassName: t
+        }) : (0, _clsxDefault.default)(t, p(g));
+    }
+    function E() {
+        s && (r(!0), B.play());
+    }
+    return O(()=>{
+        if (s) {
+            var e;
+            const t = c.current.querySelectorAll('[data-in="true"]'), n = 12, s = null == (e = o.position) ? void 0 : e.includes("top");
+            let r = 0, i = 0;
+            Array.from(t).reverse().forEach((e, t)=>{
+                const o = e;
+                o.classList.add("Toastify__toast--stacked"), t > 0 && (o.dataset.collapsed = `${a}`), o.dataset.pos || (o.dataset.pos = s ? "top" : "bot");
+                const l = r * (a ? .2 : 1) + (a ? 0 : n * t);
+                o.style.setProperty("--y", `${s ? l : -1 * l}px`), o.style.setProperty("--g", `${n}`), o.style.setProperty("--s", "" + (1 - (a ? i : 0))), r += o.offsetHeight, i += .025;
+            });
+        }
+    }, [
+        a,
+        f,
+        s
+    ]), (0, _reactDefault.default).createElement("div", {
+        ref: c,
+        className: "Toastify",
+        id: h,
+        onMouseEnter: ()=>{
+            s && (r(!1), B.pause());
+        },
+        onMouseLeave: E
+    }, d((t, n)=>{
+        const o = n.length ? {
+            ...y
+        } : {
+            ...y,
+            pointerEvents: "none"
+        };
+        return (0, _reactDefault.default).createElement("div", {
+            className: T(t),
+            style: o,
+            key: `container-${t}`
+        }, n.map((t)=>{
+            let { content: n, props: o } = t;
+            return (0, _reactDefault.default).createElement(R, {
+                ...o,
+                stacked: s,
+                collapseAll: E,
+                isIn: m(o.toastId, o.containerId),
+                style: o.style,
+                key: `toast-${o.key}`
+            }, n);
+        }));
+    }));
+}
+
+},{"react":"21dqq","clsx":"gocd3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gocd3":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "clsx", ()=>clsx);
+function r(e) {
+    var t, f, n = "";
+    if ("string" == typeof e || "number" == typeof e) n += e;
+    else if ("object" == typeof e) {
+        if (Array.isArray(e)) {
+            var o = e.length;
+            for(t = 0; t < o; t++)e[t] && (f = r(e[t])) && (n && (n += " "), n += f);
+        } else for(f in e)e[f] && (n && (n += " "), n += f);
+    }
+    return n;
+}
+function clsx() {
+    for(var e, t, f = 0, n = "", o = arguments.length; f < o; f++)(e = arguments[f]) && (t = r(e)) && (n && (n += " "), n += t);
+    return n;
+}
+exports.default = clsx;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gJP2Y":[function() {},{}],"fjHY6":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$758f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$758f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const MenuShimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-3/12 bg-gray-200 h-8 my-4 mx-auto"
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/MenuShimmer.js",
+                lineNumber: 6,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "h-8 my-4 flex justify-center",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "w-1/12 bg-gray-200"
+                    }, void 0, false, {
+                        fileName: "FoodApp/src/Components/MenuShimmer.js",
+                        lineNumber: 8,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "w-1/12 bg-gray-200 ml-4"
+                    }, void 0, false, {
+                        fileName: "FoodApp/src/Components/MenuShimmer.js",
+                        lineNumber: 9,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "FoodApp/src/Components/MenuShimmer.js",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-1/2 bg-gray-100 h-12 border-b-2 shadow-blue-100 my-2 mx-auto"
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/MenuShimmer.js",
+                lineNumber: 11,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-1/2 bg-gray-100 h-12 border-b-2 shadow-blue-100 my-2 mx-auto"
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/MenuShimmer.js",
+                lineNumber: 12,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-1/2 bg-gray-100 h-12 border-b-2 shadow-blue-100 my-2 mx-auto"
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/MenuShimmer.js",
+                lineNumber: 13,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-1/2 bg-gray-100 h-12 border-b-2 shadow-blue-100 my-2 mx-auto"
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/MenuShimmer.js",
+                lineNumber: 14,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-1/2 bg-gray-100 h-12 border-b-2 shadow-blue-100 my-2 mx-auto"
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/MenuShimmer.js",
+                lineNumber: 15,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-1/2 bg-gray-100 h-12 border-b-2 shadow-blue-100 my-2 mx-auto"
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/MenuShimmer.js",
+                lineNumber: 16,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-1/2 bg-gray-100 h-12 border-b-2 shadow-blue-100 my-2 mx-auto"
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/MenuShimmer.js",
+                lineNumber: 17,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-1/2 bg-gray-100 h-12 border-b-2 shadow-blue-100 my-2 mx-auto"
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/MenuShimmer.js",
+                lineNumber: 18,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-1/2 bg-gray-100 h-12 border-b-2 shadow-blue-100 my-2 mx-auto"
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/MenuShimmer.js",
+                lineNumber: 19,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "FoodApp/src/Components/MenuShimmer.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = MenuShimmer;
+exports.default = MenuShimmer;
+var _c;
+$RefreshReg$(_c, "MenuShimmer");
+
+  $parcel$ReactRefreshHelpers$758f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b2qck":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8752 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -65891,7 +66848,7 @@ const Cart = ()=>{
         Navigate("/");
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "text-center h-screen",
+        className: "text-center h-auto",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "w-6/12 mx-auto",
             children: [
@@ -65984,7 +66941,7 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./CartItems":"hYX6R","../utils/Redux Slices/CartSlice":"g8H9A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"hYX6R":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./CartItems":"hYX6R","../utils/Redux Slices/CartSlice":"g8H9A","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hYX6R":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$848f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -65997,6 +66954,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _cartSlice = require("../utils/Redux Slices/CartSlice");
 var _const = require("../utils/const");
 var _reactRedux = require("react-redux");
+var _reactToastify = require("react-toastify");
+var _reactToastifyCss = require("react-toastify/dist/ReactToastify.css");
 var _s = $RefreshSig$();
 const ItemList = (props)=>{
     _s();
@@ -66007,84 +66966,94 @@ const ItemList = (props)=>{
     const handlerRemove = (item)=>{
         // console.log(item?.card?.info?.id)
         dispatch((0, _cartSlice.removeItem)(item?.card?.info?.id));
+        (0, _reactToastify.toast)("Item removed from the cart!");
     };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "mb-6 border-b-2 border-gray-300 pb-4 text-left my-6",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "flex justify-between",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "flex-col w-9/12 pl-2",
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "mb-6 border-b-2 border-gray-300 pb-4 text-left my-6",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex justify-between",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "font-bold text-md",
-                            children: name
-                        }, void 0, false, {
-                            fileName: "FoodApp/src/Components/CartItems.js",
-                            lineNumber: 21,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "font-bold",
+                            className: "flex-col w-9/12 pl-2",
                             children: [
-                                "\u20B9",
-                                defaultPrice / 100 || price / 100
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "font-bold text-md",
+                                    children: name
+                                }, void 0, false, {
+                                    fileName: "FoodApp/src/Components/CartItems.js",
+                                    lineNumber: 26,
+                                    columnNumber: 11
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "font-bold",
+                                    children: [
+                                        "\u20B9",
+                                        defaultPrice / 100 || price / 100
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "FoodApp/src/Components/CartItems.js",
+                                    lineNumber: 27,
+                                    columnNumber: 11
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "tex-color-gray-300 mt-2",
+                                    children: description
+                                }, void 0, false, {
+                                    fileName: "FoodApp/src/Components/CartItems.js",
+                                    lineNumber: 28,
+                                    columnNumber: 11
+                                }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "FoodApp/src/Components/CartItems.js",
-                            lineNumber: 22,
-                            columnNumber: 11
+                            lineNumber: 25,
+                            columnNumber: 9
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "tex-color-gray-300 mt-2",
-                            children: description
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "absolute rounded-lg text-green-600 bg-white px-4 py-2 mt-24 ml-8 font-bold shadow-lg hover:bg-gray-400 hover:text-white",
+                                    onClick: ()=>handlerRemove(item),
+                                    children: "Remove"
+                                }, void 0, false, {
+                                    fileName: "FoodApp/src/Components/CartItems.js",
+                                    lineNumber: 31,
+                                    columnNumber: 11
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _const.CDN_URL) + imageId,
+                                    className: "bg-cover w-[156px] h-[144px] p-2 mr-2"
+                                }, void 0, false, {
+                                    fileName: "FoodApp/src/Components/CartItems.js",
+                                    lineNumber: 38,
+                                    columnNumber: 11
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
                             fileName: "FoodApp/src/Components/CartItems.js",
-                            lineNumber: 23,
-                            columnNumber: 11
+                            lineNumber: 30,
+                            columnNumber: 9
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "FoodApp/src/Components/CartItems.js",
-                    lineNumber: 20,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "absolute rounded-lg text-green-600 bg-white px-4 py-1 mt-24 ml-8 font-bold shadow-lg hover:bg-gray-400 hover:text-white",
-                            onClick: ()=>handlerRemove(item),
-                            children: "Remove"
-                        }, void 0, false, {
-                            fileName: "FoodApp/src/Components/CartItems.js",
-                            lineNumber: 26,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _const.CDN_URL) + imageId,
-                            className: "bg-cover w-[156px] h-[144px] p-4 mr-2"
-                        }, void 0, false, {
-                            fileName: "FoodApp/src/Components/CartItems.js",
-                            lineNumber: 33,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "FoodApp/src/Components/CartItems.js",
-                    lineNumber: 25,
-                    columnNumber: 9
+                    lineNumber: 24,
+                    columnNumber: 7
                 }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "FoodApp/src/Components/CartItems.js",
-            lineNumber: 19,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "FoodApp/src/Components/CartItems.js",
-        lineNumber: 18,
-        columnNumber: 5
-    }, undefined);
+            }, void 0, false, {
+                fileName: "FoodApp/src/Components/CartItems.js",
+                lineNumber: 23,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactToastify.ToastContainer), {}, void 0, false, {
+                fileName: "FoodApp/src/Components/CartItems.js",
+                lineNumber: 47,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true);
 };
 _s(ItemList, "rgTLoBID190wEKCp9+G8W6F7A5M=", false, function() {
     return [
@@ -66101,7 +67070,7 @@ $RefreshReg$(_c, "ItemList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/const":"fRCML","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/Redux Slices/CartSlice":"g8H9A","react-redux":"62sf7"}],"hZ9IK":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../utils/Redux Slices/CartSlice":"g8H9A","../utils/const":"fRCML","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-toastify":"kSvyQ","react-toastify/dist/ReactToastify.css":"gJP2Y"}],"gJP2Y":[function() {},{}],"hZ9IK":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8aef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -66116,7 +67085,7 @@ const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "w-12/12",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "bg-black flex justify-evenly text-white py-6 mt-4 ",
+            className: "bg-black flex justify-evenly text-white py-6 mt-16 ",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     children: [
@@ -66342,161 +67311,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/const":"fRCML"}],"dkKLB":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1d4d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1d4d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _const = require("../utils/const");
-const Help = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "my-4 flex justify-start items-center gap-2 flex-col ",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    className: " lg:text-5xl md:text-3xl text-2xl py-4 md:py-3 lg:py-4 text-orange-500 font-bold",
-                    children: "Help & Support"
-                }, void 0, false, {
-                    fileName: "FoodApp/src/Components/Help.js",
-                    lineNumber: 6,
-                    columnNumber: 14
-                }, undefined)
-            }, void 0, false, {
-                fileName: "FoodApp/src/Components/Help.js",
-                lineNumber: 6,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex w-12/12 md:px-16 px-4 lg:px-20 justify-center md:gap-6 gap-4 lg:gap-8 items-center flex-col lg:flex-row",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "w-5/12",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "lg:w-full md:w-full w-full",
-                            src: (0, _const.help)
-                        }, void 0, false, {
-                            fileName: "FoodApp/src/Components/Help.js",
-                            lineNumber: 9,
-                            columnNumber: 9
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "FoodApp/src/Components/Help.js",
-                        lineNumber: 8,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex justify-start items-start lg:py-8 md:py-6 py-4 lg:w-8/12 w-12/12 gap-4 flex-col",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "flex lg:py-4 md:py-3 py-2 lg:px-8 md:px-6 px-3 justify-start items-start flex-col bg-white shadow-lg",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "lg:text-base md:text-base text-sm text-gray-900 font-semibold lg:tracking-normal tracking-wide",
-                                        children: "What is Food Bazaar Customer Care Number?"
-                                    }, void 0, false, {
-                                        fileName: "FoodApp/src/Components/Help.js",
-                                        lineNumber: 13,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "lg:pt-3 md:pt-2 pt-1 md:text-sm text-xs lg:text-sm text-gray-400 font-normal lg:tracking-wide tracking-wider",
-                                        children: "We've upgraded our customer support to a chat-based system for swift issue resolution. No more navigating through IVRS complexities. Just search for your issue in the help section, start a chat, and a care executive will assist you shortly."
-                                    }, void 0, false, {
-                                        fileName: "FoodApp/src/Components/Help.js",
-                                        lineNumber: 14,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "FoodApp/src/Components/Help.js",
-                                lineNumber: 12,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "flex lg:py-4 md:py-3 py-2 lg:px-8 md:px-6 px-3 justify-start items-start flex-col bg-white shadow-lg",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "lg:text-base md:text-base text-sm text-gray-900 font-semibold lg:tracking-normal tracking-wide",
-                                        children: "I did not receive my OTP on SMS"
-                                    }, void 0, false, {
-                                        fileName: "FoodApp/src/Components/Help.js",
-                                        lineNumber: 17,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "lg:pt-3 md:pt-2 pt-1 md:text-sm text-xs lg:text-sm text-gray-400 font-normal lg:tracking-wide tracking-wider",
-                                        children: "If you're not receiving the OTP, it's usually due to a network issue. Please check your mobile network settings and try generating a new OTP. If the problem persists, you might want to restart your device or reach out to us at support@foodbazaar.in for assistance."
-                                    }, void 0, false, {
-                                        fileName: "FoodApp/src/Components/Help.js",
-                                        lineNumber: 18,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "FoodApp/src/Components/Help.js",
-                                lineNumber: 16,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "flex lg:py-4 md:py-3 py-2 lg:px-8 md:px-6 px-3 justify-start items-start flex-col bg-white shadow-lg",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "lg:text-base md:text-base text-sm text-gray-900 font-semibold lg:tracking-normal tracking-wide",
-                                        children: "I am unable to find the restaurant I'm looking for?"
-                                    }, void 0, false, {
-                                        fileName: "FoodApp/src/Components/Help.js",
-                                        lineNumber: 23,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "lg:pt-3 md:pt-2 pt-1 md:text-sm text-xs lg:text-sm text-gray-400 font-normal lg:tracking-wide tracking-wider",
-                                        children: "The restaurant might either be closed at the moment or temporarily not serviceable due to low rider availability near the restaurant. Please try again after some time or consider ordering from a different eatery."
-                                    }, void 0, false, {
-                                        fileName: "FoodApp/src/Components/Help.js",
-                                        lineNumber: 24,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "FoodApp/src/Components/Help.js",
-                                lineNumber: 22,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "FoodApp/src/Components/Help.js",
-                        lineNumber: 11,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "FoodApp/src/Components/Help.js",
-                lineNumber: 7,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "FoodApp/src/Components/Help.js",
-        lineNumber: 5,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Help;
-exports.default = Help;
-var _c;
-$RefreshReg$(_c, "Help");
-
-  $parcel$ReactRefreshHelpers$1d4d.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/const":"fRCML"}],"XRfad":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../utils/const":"fRCML","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"XRfad":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$48a9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

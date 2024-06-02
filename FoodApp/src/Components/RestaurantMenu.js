@@ -5,6 +5,7 @@ import RestaurantCategory from "./RestaurantCategory";
 import {faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import MenuShimmer from "./MenuShimmer";
 
 const RestaurantMenu = ()=> { 
 const {resId} = useParams();
@@ -13,7 +14,7 @@ const [showIndex, setshowIndex] = useState(null)
 
   let resInfo = useRestaurantMenu(resId);
   // console.log(resInfo?.cards[2]?.card?.card?.info)
-  if (resInfo === null) <ShimmerContainer />;
+  if (resInfo === null) return <MenuShimmer/>;
   else {
     const { name, cloudinaryImageId, costForTwoMessage, cuisines,avgRatingString, totalRatingsString} =
       resInfo?.cards[2]?.card?.card?.info;
@@ -31,7 +32,7 @@ const [showIndex, setshowIndex] = useState(null)
     return (
       <div className="border-1 border-gray-100 "> 
         <h1 className="text-3xl font-bold text-center mt-6">{name}</h1>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-4">
         <FontAwesomeIcon icon={faStar} className="mt-[2px] mx-2"/>
         <span className="font-bold text-md">{avgRatingString} ({totalRatingsString})</span>- ₹
         <span className="font-bold text-md">{costForTwoMessage}</span>

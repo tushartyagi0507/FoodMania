@@ -30,7 +30,7 @@ const handlerLoad = ()=>{
       <div className="flex justify-between items-center shadow-md">
         <div className="name_logo flex justify-center items-center">
           <img
-            className="w-20 m-4 ml-32"
+            className="w-20 m-4 ml-24"
             src={LOGO_URL}
           />
         <h3 className="font-bold text-3xl text-red-600 font-serif cursor-pointer" onClick={handlerLoad}>FoodMania</h3>

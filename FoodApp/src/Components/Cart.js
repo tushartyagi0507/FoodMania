@@ -18,7 +18,7 @@ const handlerHome = ()=>{
 }
 
     return (
-        <div className="text-center h-screen">
+        <div className="text-center h-auto">
             <div className="w-6/12 mx-auto">
             {List.map((list)=>{
                 return (<CartItems item={list} key={list?.card?.info?.id }/>)
@@ -40,7 +40,6 @@ const handlerHome = ()=>{
             <button className="bg-blue-500 text-white text-bold rounded-lg p-2 m-4"
             onClick={handlerClear}>Clear Cart</button>
             }
-            
             </div>
            
             

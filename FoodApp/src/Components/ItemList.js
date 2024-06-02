@@ -1,8 +1,12 @@
 import { addItem } from "../utils/Redux Slices/CartSlice";
 import { CDN_URL } from "../utils/const";
 import { useDispatch } from "react-redux";
+import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ItemList = (props) => {
+
   // console.log("props for list items", props);
   const { name, defaultPrice, description, price, imageId } =
     props?.item?.card?.info;
@@ -13,9 +17,12 @@ const ItemList = (props) => {
     const handlerAdd = (item)=>{
       // console.log(item)
       dispatch(addItem(item))
+      // setpopup(true)
+      toast("Item added to the cart !");
     }
   return (
-    <div className="mb-6 border-b-2 border-gray-300 pb-4 ">
+    <>
+    <div className="my-6 border-b-2 border-gray-300 pb-4 ">
       <div className="flex justify-between">
         <div className="flex-col w-9/12 pl-2">
           <div className="font-bold text-md">{name}</div>
@@ -32,13 +39,15 @@ const ItemList = (props) => {
           </button>
           <img
             src={CDN_URL + imageId}
-            className="bg-cover w-[156px] h-[144px] p-4 mr-2"
+            className="bg-cover w-[156px] h-[144px] p-2 mr-2"
           />
         </div>
       </div>
-
+      
       {/* {console.log( CDN_URL+imageId)} */}
     </div>
+    <ToastContainer />
+    </>
   );
 };
 

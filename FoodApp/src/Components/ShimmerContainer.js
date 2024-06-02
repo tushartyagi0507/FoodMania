@@ -25,6 +25,7 @@ return (
       <div className="w-32 h-32 rounded-full bg-gray-200 "></div>
       </div>
     </div>
+    <div className="h-12 w-60 bg-gray-100 my-6 ml-44"></div>
       <div className="flex flex-wrap gap-4 my-6 mx-auto w-9/12">
        <div className={shimCard}></div> 
        <div className={shimCard}></div>
