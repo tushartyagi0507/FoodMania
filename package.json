@@ -2,7 +2,7 @@
   "name": "foodapp",
   "version": "1.0.0",
   "description": "FoodApp building",
-  "main": "index.js",
+
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
