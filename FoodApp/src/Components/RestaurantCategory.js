@@ -27,7 +27,7 @@ setshowIndex();
     <div className="w-6/12 mt-4 mx-auto p-2">
         <div className="border-b-2 border-gray-300 mb-2 shadow-md">
          <div className="flex justify-between cursor-pointer" onClick={showhnadler}>
-         <h2 className="text-md font-black mb-4 text-lg pl-2">{title} ({itemCards.length})</h2>
+         <h2 className="text-md font-lg mb-4 text-sm pl-2 sm:font-bold sm:text-md md:font-black md:text-lg">{title} ({itemCards.length})</h2>
         <span> <FontAwesomeIcon icon={faAngleDown} className="pr-2"/></span>
          </div>
          { isShow && itemCards.map((Item)=>{

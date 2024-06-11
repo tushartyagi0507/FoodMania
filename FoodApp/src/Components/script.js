@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(document.querySelector(".root"));
 const App = () => {
   return (
  <Provider store={Store}>
-     <div className="app">
+     <div className="overflow-hidden ">
       <Header />
       <Outlet/>
       <Footer/>

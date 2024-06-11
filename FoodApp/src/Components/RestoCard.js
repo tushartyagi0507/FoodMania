@@ -10,10 +10,13 @@ const RestoCard = (props) => {
 
 return (
     <div className="w-[250px] h-[290px] shadow-lg overflow-visible hover:border-2 border-solid border-transparent
-    hover:shadow-md rounded-lg px-2">
-        <img
+    hover:shadow-md rounded-lg px-2
+    lg:w-[250px] lg:h-[290px]">
+        <img 
           alt="dish_logo"
-          className="w-[250px] h-[170px] rounded-lg bg-cover overflow-hidden pt-2"
+          className="w-[250px] h-[170px] rounded-lg bg-cover overflow-hidden pt-2
+          md:shrink-0
+          lg:w-[250px] lg:h-[170px]"
           src={CDN_URL + cloudinaryImageId}
         />
   

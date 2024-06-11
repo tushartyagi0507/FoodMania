@@ -7,7 +7,10 @@ const TopCarousal = (props) => {
   return (
     <div className=''>
     <div className=' ml-2'>
-      <img src={CDN_URL + image} alt='item logo' className='bg-fit rounded-full h-48 w-60 mr-36'/>
+      <img src={CDN_URL + image} alt='item logo' className='bg-fit rounded-full 
+      h-28 w-40 mr-16
+      sm:h-40 sm:w-52 sm:mr-24
+       lg:h-48 lg:w-60 lg:mr-36'/>
     </div>
     </div>
   )
