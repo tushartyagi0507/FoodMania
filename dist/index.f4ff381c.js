@@ -65090,7 +65090,14 @@ const Body = ()=>{
     // this is destructruing of the array which is returned by useState(),
     // console.log(listofRestaurants);
     const [searchtext, setsearchtext] = (0, _react.useState)([]);
+    const searchRef = (0, _react.useRef)();
     const VegRestuarant = (0, _restoCardJs.WithVeg)((0, _restoCardJsDefault.default));
+    const searchLogic = ()=>{
+        console.log("hi", searchRef.current.value);
+        setfilteredRestaurants(listofRestaurants.filter((res)=>{
+            return res?.info?.name.toLowerCase().includes(searchRef.current.value.toLowerCase());
+        }));
+    };
     (0, _react.useEffect)(()=>{
         fetchdata();
     }, []);
@@ -65114,18 +65121,18 @@ const Body = ()=>{
             children: "Looks like you are offline! please check your internet connection"
         }, void 0, false, {
             fileName: "FoodApp/src/Components/Body.js",
-            lineNumber: 49,
+            lineNumber: 63,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "FoodApp/src/Components/Body.js",
-        lineNumber: 48,
+        lineNumber: 62,
         columnNumber: 7
     }, undefined);
     return listofRestaurants?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerContainerJsDefault.default), {}, void 0, false, {
         fileName: "FoodApp/src/Components/Body.js",
-        lineNumber: 55,
-        columnNumber: 40
+        lineNumber: 69,
+        columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
         children: [
@@ -65146,8 +65153,8 @@ const Body = ()=>{
                                 children: "Ratings 4.0+"
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/Body.js",
-                                lineNumber: 64,
-                                columnNumber: 13
+                                lineNumber: 83,
+                                columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: "text-neutral-400 border-solid border-2 border-slate-300 shadow-md px-2 rounded-md text-sm font-sm h-6 ml-2 lg:h-8 lg:font-bold md:font-bold md:h-8",
@@ -65161,14 +65168,14 @@ const Body = ()=>{
                                 children: "Pure Veg"
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/Body.js",
-                                lineNumber: 79,
-                                columnNumber: 13
+                                lineNumber: 98,
+                                columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "FoodApp/src/Components/Body.js",
-                        lineNumber: 61,
-                        columnNumber: 11
+                        lineNumber: 78,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "mr-10 mt-4 text-center md:mt-0",
@@ -65177,50 +65184,55 @@ const Body = ()=>{
                                 type: "text",
                                 className: "border-2 border-solid border-rgb(156,156,156) w-[250px] mx-auto pl-2  shadow-md h-6 bg-gray-50 rounded-md font-sm   sm:font-bold sm:h-8 sm:w-64 sm:border-2 sm:mx-0 lg:w-80",
                                 placeholder: "Search for restaurant and food",
-                                value: searchtext,
-                                onChange: (e)=>{
-                                    setsearchtext(e.target.value);
-                                }
+                                ref: searchRef,
+                                // value={searchtext}
+                                // onChange={(e) => {
+                                //   setsearchtext(e.target.value);
+                                // }}
+                                onChange: searchLogic
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/Body.js",
-                                lineNumber: 96,
-                                columnNumber: 13
+                                lineNumber: 117,
+                                columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: "ml-2 border-2 border-solid border-rgb(156,156,156) px-2  shadow-md h-6 bg-gray-50 rounded-md text-sm font-sm md:h-8 md: lg:h-8 font-bold",
-                                onClick: ()=>{
-                                    console.log(searchtext);
-                                    let searchedList = listofRestaurants.filter((res)=>{
-                                        return res?.info.name.toLowerCase().includes(searchtext.toLowerCase());
-                                    });
-                                    console.log(searchedList);
-                                    setfilteredRestaurants(searchedList);
-                                },
+                                // onClick={() => {
+                                //   console.log(searchtext);
+                                //   let searchedList = listofRestaurants.filter((res) => {
+                                //     return res?.info.name
+                                //       .toLowerCase()
+                                //       .includes(searchtext.toLowerCase());
+                                //   });
+                                //   console.log(searchedList);
+                                //   setfilteredRestaurants(searchedList);
+                                // }}
+                                onClick: searchLogic,
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/Body.js",
-                                lineNumber: 109,
-                                columnNumber: 13
+                                lineNumber: 132,
+                                columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "FoodApp/src/Components/Body.js",
-                        lineNumber: 94,
-                        columnNumber: 11
+                        lineNumber: 113,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "FoodApp/src/Components/Body.js",
-                lineNumber: 57,
-                columnNumber: 9
+                lineNumber: 72,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: "text-lg ml-[12%] font-bold my-6  sm:text-xl md:text-2xl lg:ml-44 lg:text-3xl",
                 children: "What's on your mind?"
             }, void 0, false, {
                 fileName: "FoodApp/src/Components/Body.js",
-                lineNumber: 129,
-                columnNumber: 9
+                lineNumber: 153,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex overflow-x-scroll no-scrollbar [&::-webkit-scrollbar]:hidden mx-auto w-9/12 border-b-4 border-gray-100",
@@ -65229,21 +65241,21 @@ const Body = ()=>{
                         title: item?.action?.text
                     }, item?.action?.text, false, {
                         fileName: "FoodApp/src/Components/Body.js",
-                        lineNumber: 135,
-                        columnNumber: 58
+                        lineNumber: 168,
+                        columnNumber: 15
                     }, undefined))
             }, void 0, false, {
                 fileName: "FoodApp/src/Components/Body.js",
-                lineNumber: 133,
-                columnNumber: 9
+                lineNumber: 161,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: "my-6 ml-[12%] font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl lg:ml-44",
                 children: "Top Resaturants in Bangalore"
             }, void 0, false, {
                 fileName: "FoodApp/src/Components/Body.js",
-                lineNumber: 139,
-                columnNumber: 9
+                lineNumber: 176,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex flex-wrap gap-4 w-[255px] mx-auto sm:w-[518px]  min-[854px]:w-[784px] min-[1390px]:w-[1050px]",
@@ -65255,35 +65267,35 @@ const Body = ()=>{
                             resdata: res
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/Body.js",
-                            lineNumber: 157,
-                            columnNumber: 19
+                            lineNumber: 200,
+                            columnNumber: 21
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restoCardJsDefault.default), {
                             resdata: res
                         }, void 0, false, {
                             fileName: "FoodApp/src/Components/Body.js",
-                            lineNumber: 159,
-                            columnNumber: 19
+                            lineNumber: 202,
+                            columnNumber: 21
                         }, undefined)
                     }, res?.info?.id, false, {
                         fileName: "FoodApp/src/Components/Body.js",
-                        lineNumber: 151,
-                        columnNumber: 15
+                        lineNumber: 194,
+                        columnNumber: 17
                     }, undefined);
                 // return <RestoCard key={res?.info?.id} resdata={res} />
                 })
             }, void 0, false, {
                 fileName: "FoodApp/src/Components/Body.js",
-                lineNumber: 143,
-                columnNumber: 9
+                lineNumber: 184,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "FoodApp/src/Components/Body.js",
-        lineNumber: 56,
-        columnNumber: 7
+        lineNumber: 71,
+        columnNumber: 5
     }, undefined);
 };
-_s(Body, "1TD994jofPD9UJIp9D2EETe+3lQ=");
+_s(Body, "jivNbQ0tz/FboZO8oUUOsojsUtQ=");
 _c = Body;
 exports.default = Body;
 var _c;
