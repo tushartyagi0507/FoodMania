@@ -67245,6 +67245,7 @@ var _cartItems = require("./CartItems");
 var _cartItemsDefault = parcelHelpers.interopDefault(_cartItems);
 var _cartSlice = require("../utils/Redux Slices/CartSlice");
 var _reactRouterDom = require("react-router-dom");
+var _reactToastify = require("react-toastify");
 var _s = $RefreshSig$();
 const Cart = ()=>{
     _s();
@@ -67260,78 +67261,85 @@ const Cart = ()=>{
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "text-center h-auto",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "w-6/12 mx-auto",
-            children: [
-                List.map((list)=>{
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartItemsDefault.default), {
-                        item: list
-                    }, list?.card?.info?.id, false, {
-                        fileName: "FoodApp/src/Components/Cart.js",
-                        lineNumber: 24,
-                        columnNumber: 25
-                    }, undefined);
-                }),
-                List.length === 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: "mt-6 text-2xl text-bold",
-                            children: "The cart is empty"
-                        }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactToastify.ToastContainer), {}, void 0, false, {
+                fileName: "FoodApp/src/Components/Cart.js",
+                lineNumber: 23,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-6/12 mx-auto",
+                children: [
+                    List.map((list)=>{
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartItemsDefault.default), {
+                            item: list
+                        }, list?.card?.info?.id, false, {
                             fileName: "FoodApp/src/Components/Cart.js",
-                            lineNumber: 28,
-                            columnNumber: 16
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: "https://food-bazaar-ten.vercel.app/cart.ce1fb0f8.svg",
-                                className: "w-60 mx-auto my-6"
+                            lineNumber: 26,
+                            columnNumber: 25
+                        }, undefined);
+                    }),
+                    List.length === 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "mt-6 text-2xl text-bold",
+                                children: "The cart is empty"
                             }, void 0, false, {
                                 fileName: "FoodApp/src/Components/Cart.js",
                                 lineNumber: 30,
-                                columnNumber: 21
+                                columnNumber: 16
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: "https://food-bazaar-ten.vercel.app/cart.ce1fb0f8.svg",
+                                    className: "w-60 mx-auto my-6"
+                                }, void 0, false, {
+                                    fileName: "FoodApp/src/Components/Cart.js",
+                                    lineNumber: 32,
+                                    columnNumber: 21
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Cart.js",
+                                lineNumber: 31,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-center",
+                                children: "Please add items before you check out "
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/Cart.js",
+                                lineNumber: 35,
+                                columnNumber: 14
                             }, undefined)
-                        }, void 0, false, {
-                            fileName: "FoodApp/src/Components/Cart.js",
-                            lineNumber: 29,
-                            columnNumber: 17
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: "text-center",
-                            children: "Please add items before you check out "
-                        }, void 0, false, {
-                            fileName: "FoodApp/src/Components/Cart.js",
-                            lineNumber: 33,
-                            columnNumber: 14
-                        }, undefined)
-                    ]
-                }, void 0, true),
-                List.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "bg-blue-500 text-white text-bold rounded-lg p-2 m-4",
-                    onClick: handlerHome,
-                    children: "See restaurants to order"
-                }, void 0, false, {
-                    fileName: "FoodApp/src/Components/Cart.js",
-                    lineNumber: 37,
-                    columnNumber: 13
-                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "bg-blue-500 text-white text-bold rounded-lg p-2 m-4",
-                    onClick: handlerClear,
-                    children: "Clear Cart"
-                }, void 0, false, {
-                    fileName: "FoodApp/src/Components/Cart.js",
-                    lineNumber: 40,
-                    columnNumber: 13
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "FoodApp/src/Components/Cart.js",
-            lineNumber: 22,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+                        ]
+                    }, void 0, true),
+                    List.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "bg-blue-500 text-white text-bold rounded-lg p-2 m-4",
+                        onClick: handlerHome,
+                        children: "See restaurants to order"
+                    }, void 0, false, {
+                        fileName: "FoodApp/src/Components/Cart.js",
+                        lineNumber: 39,
+                        columnNumber: 13
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "bg-blue-500 text-white text-bold rounded-lg p-2 m-4",
+                        onClick: handlerClear,
+                        children: "Clear Cart"
+                    }, void 0, false, {
+                        fileName: "FoodApp/src/Components/Cart.js",
+                        lineNumber: 42,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "FoodApp/src/Components/Cart.js",
+                lineNumber: 24,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "FoodApp/src/Components/Cart.js",
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 9
     }, undefined);
 };
@@ -67352,7 +67360,7 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./CartItems":"hYX6R","../utils/Redux Slices/CartSlice":"g8H9A","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hYX6R":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./CartItems":"hYX6R","../utils/Redux Slices/CartSlice":"g8H9A","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-toastify":"kSvyQ"}],"hYX6R":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$848f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -67376,95 +67384,88 @@ const ItemList = (props)=>{
     const dispatch = (0, _reactRedux.useDispatch)();
     const handlerRemove = (item)=>{
         // console.log(item?.card?.info?.id)
+        (0, _reactToastify.toast).warn("Item removed from the cart!");
         dispatch((0, _cartSlice.removeItem)(item?.card?.info?.id));
-        (0, _reactToastify.toast)("Item removed from the cart!");
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "mb-6 border-b-2 border-gray-300 pb-4 text-left my-6",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "flex justify-between",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "flex-col w-9/12 pl-2",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "font-bold text-md",
-                                    children: name
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/CartItems.js",
-                                    lineNumber: 26,
-                                    columnNumber: 11
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "font-bold",
-                                    children: [
-                                        "\u20B9",
-                                        defaultPrice / 100 || price / 100
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "FoodApp/src/Components/CartItems.js",
-                                    lineNumber: 27,
-                                    columnNumber: 11
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "tex-color-gray-300 mt-2",
-                                    children: description
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/CartItems.js",
-                                    lineNumber: 28,
-                                    columnNumber: 11
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "FoodApp/src/Components/CartItems.js",
-                            lineNumber: 25,
-                            columnNumber: 9
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    className: "absolute rounded-lg text-green-600 bg-white px-4 py-2 mt-24 ml-8 font-bold shadow-lg hover:bg-gray-400 hover:text-white",
-                                    onClick: ()=>handlerRemove(item),
-                                    children: "Remove"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/CartItems.js",
-                                    lineNumber: 31,
-                                    columnNumber: 11
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _const.CDN_URL) + imageId,
-                                    className: "bg-cover w-[156px] h-[144px] p-2 mr-2"
-                                }, void 0, false, {
-                                    fileName: "FoodApp/src/Components/CartItems.js",
-                                    lineNumber: 38,
-                                    columnNumber: 11
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "FoodApp/src/Components/CartItems.js",
-                            lineNumber: 30,
-                            columnNumber: 9
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "FoodApp/src/Components/CartItems.js",
-                    lineNumber: 24,
-                    columnNumber: 7
-                }, undefined)
-            }, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "mb-6 border-b-2 border-gray-300 pb-4 text-left my-6",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex justify-between",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex-col w-9/12 pl-2",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "font-bold text-md",
+                                children: name
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/CartItems.js",
+                                lineNumber: 26,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "font-bold",
+                                children: [
+                                    "\u20B9",
+                                    defaultPrice / 100 || price / 100
+                                ]
+                            }, void 0, true, {
+                                fileName: "FoodApp/src/Components/CartItems.js",
+                                lineNumber: 27,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "tex-color-gray-300 mt-2",
+                                children: description
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/CartItems.js",
+                                lineNumber: 28,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "FoodApp/src/Components/CartItems.js",
+                        lineNumber: 25,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "absolute rounded-lg text-green-600 bg-white px-4 py-2 mt-24 ml-8 font-bold shadow-lg hover:bg-gray-400 hover:text-white",
+                                onClick: ()=>handlerRemove(item),
+                                children: "Remove"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/CartItems.js",
+                                lineNumber: 31,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: (0, _const.CDN_URL) + imageId,
+                                className: "bg-cover w-[156px] h-[144px] p-2 mr-2"
+                            }, void 0, false, {
+                                fileName: "FoodApp/src/Components/CartItems.js",
+                                lineNumber: 38,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "FoodApp/src/Components/CartItems.js",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "FoodApp/src/Components/CartItems.js",
-                lineNumber: 23,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactToastify.ToastContainer), {}, void 0, false, {
-                fileName: "FoodApp/src/Components/CartItems.js",
-                lineNumber: 47,
-                columnNumber: 5
+                lineNumber: 24,
+                columnNumber: 7
             }, undefined)
-        ]
-    }, void 0, true);
+        }, void 0, false, {
+            fileName: "FoodApp/src/Components/CartItems.js",
+            lineNumber: 23,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false);
 };
 _s(ItemList, "rgTLoBID190wEKCp9+G8W6F7A5M=", false, function() {
     return [

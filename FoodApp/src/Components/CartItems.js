@@ -1,9 +1,8 @@
 import { removeItem } from "../utils/Redux Slices/CartSlice";
 import { CDN_URL } from "../utils/const";
 import { useDispatch } from "react-redux";
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 
 const ItemList = (props) => {
   // console.log("props for list items", props);
@@ -15,8 +14,9 @@ const ItemList = (props) => {
 
     const handlerRemove = (item)=>{
       // console.log(item?.card?.info?.id)
+      toast.warn("Item removed from the cart!");
       dispatch(removeItem(item?.card?.info?.id))
-      toast("Item removed from the cart!");
+   
     }
   return (
     <>
@@ -44,7 +44,6 @@ const ItemList = (props) => {
 
       {/* {console.log( CDN_URL+imageId)} */}
     </div>
-    <ToastContainer />
     </>
   );
 };

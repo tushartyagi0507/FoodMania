@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import CartItems from "./CartItems"
 import { clearCart } from "../utils/Redux Slices/CartSlice"
 import { Navigate, useNavigate } from "react-router-dom"
+import { ToastContainer } from "react-toastify"
 
 const Cart = ()=>{
     //here also you have to subscribe to the store as you want to show the added items here
@@ -19,6 +20,7 @@ const handlerHome = ()=>{
 
     return (
         <div className="text-center h-auto">
+            <ToastContainer/>
             <div className="w-6/12 mx-auto">
             {List.map((list)=>{
                 return (<CartItems item={list} key={list?.card?.info?.id }/>)
